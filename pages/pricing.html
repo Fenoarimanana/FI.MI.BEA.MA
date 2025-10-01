@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../public/favicon.ico">
+    <title>Tarifs & Forfaits - FI.MI.BEA.MA Care | Soins de Santé pour Personnes Âgées</title>
+    <meta name="description" content="Découvrez nos tarifs transparents pour l'hébergement résidentiel, les soins à domicile et la formation professionnelle. Calculateur de prix et plans de paiement disponibles." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Ffimibeama6309back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background font-body">
+    <!-- Emergency Contact Floating Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <button class="bg-error text-white p-4 rounded-full shadow-strong hover:shadow-medium transition-all duration-300 pulse-animation" onclick="window.location.href='contact.html'">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-soft sticky top-0 z-40">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <svg class="h-10 w-auto" viewBox="0 0 200 60" fill="none">
+                            <rect x="10" y="10" width="40" height="40" rx="8" fill="#239148"/>
+                            <path d="M20 25h20M20 30h15M20 35h20" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            <text x="60" y="25" font-family="Inter" font-weight="700" font-size="16" fill="#239148">FI.MI.BEA.MA</text>
+                            <text x="60" y="40" font-family="Inter" font-weight="400" font-size="12" fill="#2B4D2A">Care</text>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="homepage.html" class="text-primary-600 font-semibold px-3 py-2 rounded-md text-sm font-medium">Accueil</a>
+                        <a href="about.html" class="text-text-secondary hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-gentle">À Propos</a>
+                        <a href="residential_care.html" class="text-text-secondary hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-gentle">Hébergement</a>
+                        <a href="home_care_services.html" class="text-text-secondary hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-gentle">Soins à Domicile</a>
+                        <a href="resources.html" class="text-text-secondary hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-gentle">Ressources</a>
+                        <a href="pricing.html" class="text-primary block px-3 py-2 rounded-md text-base font-medium">Tarifs</a>
+                        <a href="contact.html" class="bg-primary-600 text-white px-4 py-2 rounded-button text-sm font-medium hover:bg-primary-700 transition-gentle">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-text-secondary hover:text-primary p-2" onclick="toggleMobileMenu()">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-border">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Accueil</a>
+                    <a href="about.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium">À Propos</a>
+                    <a href="residential_care_overview.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Hébergement</a>
+                    <a href="home_care_services.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Soins à Domicile</a>
+                    <a href="pricing.html" class="text-primary block px-3 py-2 rounded-md text-base font-medium">Tarifs</a>
+                    <a href="contact.html" class="text-primary block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-50 to-white overflow-hidden">
+        <div class="absolute inset-0 bg-white opacity-50"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="text-center">
+                <h1 class="text-4xl lg:text-5xl font-headline font-bold text-text-primary mb-6">
+                    Tarifs Transparents & Accessibles
+                </h1>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto mb-8">
+                    Découvrez nos tarifs clairs pour tous nos services de soins aux personnes âgées. Aucun coût caché, plans de paiement flexibles disponibles.
+                </p>
+                
+                <!-- Trust Badge -->
+                <div class="inline-flex items-center bg-success-50 text-success-700 px-6 py-3 rounded-lg">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                    </svg>
+                    <span class="font-cta text-sm">Garantie Aucun Coût Caché</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Pricing Calculator -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-headline font-bold text-text-primary mb-4">
+                    Calculateur de Prix Personnalisé
+                </h2>
+                <p class="text-lg text-text-secondary">
+                    Obtenez une estimation précise selon vos besoins spécifiques
+                </p>
+            </div>
+
+            <div class="card max-w-3xl mx-auto">
+                <div class="space-y-6">
+                    <!-- Service Selection -->
+                    <div>
+                        <label class="block text-sm font-medium text-text-primary mb-3">Type de service</label>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <label class="relative">
+                                <input type="radio" name="serviceType" value="residential" class="sr-only" onchange="updateCalculator()" />
+                                <div class="service-card cursor-pointer border-2 border-border rounded-lg p-4 text-center transition-all duration-300 hover:border-primary">
+                                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-3">
+                                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="font-cta text-sm font-semibold text-text-primary">Hébergement</h3>
+                                    <p class="text-xs text-text-secondary mt-1">Résidence complète</p>
+                                </div>
+                            </label>
+
+                            <label class="relative">
+                                <input type="radio" name="serviceType" value="homecare" class="sr-only" onchange="updateCalculator()" />
+                                <div class="service-card cursor-pointer border-2 border-border rounded-lg p-4 text-center transition-all duration-300 hover:border-accent">
+                                    <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mx-auto mb-3">
+                                        <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="font-cta text-sm font-semibold text-text-primary">Soins à Domicile</h3>
+                                    <p class="text-xs text-text-secondary mt-1">Assistance personnalisée</p>
+                                </div>
+                            </label>
+
+                            <label class="relative">
+                                <input type="radio" name="serviceType" value="training" class="sr-only" onchange="updateCalculator()" />
+                                <div class="service-card cursor-pointer border-2 border-border rounded-lg p-4 text-center transition-all duration-300 hover:border-secondary">
+                                    <div class="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mx-auto mb-3">
+                                        <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="font-cta text-sm font-semibold text-text-primary">Formation</h3>
+                                    <p class="text-xs text-text-secondary mt-1">Certification professionnelle</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Dynamic Options -->
+                    <div id="calculatorOptions" class="hidden space-y-4">
+                        <!-- Options will be populated by JavaScript -->
+                    </div>
+
+                    <!-- Results -->
+                    <div id="calculatorResults" class="hidden">
+                        <div class="bg-primary-50 rounded-lg p-6 border border-primary-200">
+                            <div class="flex justify-between items-center mb-4">
+                                <span class="font-medium text-text-primary">Estimation:</span>
+                                <span id="totalPrice" class="text-3xl font-bold text-primary">0 MGA</span>
+                            </div>
+                            <div id="priceBreakdown" class="space-y-2 text-sm text-text-secondary mb-4">
+                                <!-- Breakdown will be populated by JavaScript -->
+                            </div>
+                            <div class="flex flex-col sm:flex-row gap-3">
+                                <button onclick="showPaymentPlans()" class="btn-primary flex-1">
+                                    Voir Plans de Paiement
+                                </button>
+                                <a href="contact.html" class="btn-secondary flex-1 text-center">
+                                    Demander Devis Détaillé
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Pricing Tables -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-headline font-bold text-text-primary mb-4">
+                    Tarifs Détaillés par Service
+                </h2>
+                <p class="text-xl text-text-secondary">
+                    Tous nos tarifs incluent la TVA et sont exprimés en Ariary Malagasy (MGA)
+                </p>
+            </div>
+
+            <!-- Residential Care Pricing -->
+            <div class="mb-16">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-headline font-bold text-text-primary mb-2">
+                        Hébergement Résidentiel
+                    </h3>
+                    <p class="text-text-secondary">
+                        Tarifs mensuels tout compris avec soins médicaux 24h/24
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Standard Room -->
+                    <div class="card relative">
+                        <div class="text-center mb-6">
+                            <h4 class="text-xl font-cta font-semibold text-text-primary mb-2">Chambre Standard</h4>
+                            <div class="text-3xl font-bold text-primary mb-1">450 000 MGA</div>
+                            <div class="text-sm text-text-secondary">par mois</div>
+                        </div>
+                        <div class="aspect-w-16 aspect-h-9 mb-4 rounded-lg overflow-hidden">
+                            <img src="https://images.pexels.com/photos/6129507/pexels-photo-6129507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Chambre standard" class="w-full h-32 object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+                        </div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center text-sm">
+                                <svg class="w-4 h-4 text-success mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Chambre individuelle 20m²
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <svg class="w-4 h-4 text-success mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Salle de bain privée
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <svg class="w-4 h-4 text-success mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                3 repas équilibrés/jour
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <svg class="w-4 h-4 text-success mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Soins médicaux 24h/24
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <svg class="w-4 h-4 text-success mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Activités thérapeutiques
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <svg class="w-4 h-4 text-success mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Blanchisserie incluse
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="btn-primary w-full text-center">
+                            Réserver Visite
+                        </a>
+                    </div>
+
+                    <!-- Premium Room -->
+                    <div class="card relative border-2 border-primary">
+                        <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                            <span class="bg-primary text-white px-4 py-1 rounded-full text-xs font-cta">Plus Populaire</span>
+                        </div>
+                        <div class="text-center mb-6">
+                            <h4 class="text-xl font-cta font-semibold text-text-primary mb-2">Chambre Premium</h4>
+                            <div class="text-3xl font-bold text-primary mb-1">650 000 MGA</div>
+                            <div class="text-sm text-text-secondary">par mois</div>
+                        </div>
+                        <div class="aspect-w-16 aspect-h-9 mb-4 rounded-lg overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Chambre premium" class="w-full h-32 object-cover" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/11/18/17/20/living-room-1835923_1280.jpg'; this.onerror=null;" />
+                        </div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center text-sm">
+                                <svg class="w-4 h-4 text-success mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Suite 35m² avec salon
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <svg class="w-4 h-4 text-success mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Balcon privé avec vue jardin
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <svg class="w-4 h-4 text-success mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Repas gastronomiques
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <svg class="w-4 h-4 text-success mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Soins personnalisés premium
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <svg class="w-4 h-4 text-success mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Activités exclusives
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <svg class="w-4 h-4 text-success mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Service conciergerie
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="btn-primary w-full text-center">
+                            Réserver Visite
+                        </a>
+                    </div>
+
+                    <!-- VIP Suite -->
+                    <div class="card relative">
+                        <div class="text-center mb-6">
+                            <h4 class="text-xl font-cta font-semibold text-text-primary mb-2">Suite VIP</h4>
+                            <div class="text-3xl font-bold text-primary mb-1">950 000 MGA</div>
+                            <div class="text-sm text-text-secondary">par mois</div>
+                        </div>
+                        <div class="aspect-w-16 aspect-h-9 mb-4 rounded-lg overflow-hidden">
+                            <img src="https://images.pixabay.com/photo/2016/11/18/17/20/living-room-1835923_1280.jpg" alt="Suite VIP" class="w-full h-32 object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/6129507/pexels-photo-6129507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        </div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center text-sm">
+                                <svg class="w-4 h-4 text-success mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Appartement 50m² complet
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <svg class="w-4 h-4 text-success mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Terrasse privée 15m²
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <svg class="w-4 h-4 text-success mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Service traiteur personnalisé
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <svg class="w-4 h-4 text-success mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Infirmière dédiée 12h/jour
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <svg class="w-4 h-4 text-success mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Accès famille 24h/24
+                            </li>
+                            <li class="flex items-center text-sm">
+                                <svg class="w-4 h-4 text-success mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Services premium illimités
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="btn-primary w-full text-center">
+                            Réserver Visite
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Home Care Pricing -->
+            <div class="mb-16">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-headline font-bold text-text-primary mb-2">
+                        Soins à Domicile
+                    </h3>
+                    <p class="text-text-secondary">
+                        Tarifs flexibles selon vos besoins et fréquence
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="card text-center">
+                        <div class="w-16 h-16 bg-accent-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h4 class="font-cta font-semibold text-text-primary mb-2">Visite Ponctuelle</h4>
+                        <div class="text-2xl font-bold text-accent mb-2">25 000 MGA</div>
+                        <div class="text-sm text-text-secondary mb-4">par visite (2h)</div>
+                        <ul class="text-xs text-text-secondary space-y-1">
+                            <li>Soins d'hygiène</li>
+                            <li>Aide aux repas</li>
+                            <li>Compagnie</li>
+                        </ul>
+                    </div>
+
+                    <div class="card text-center">
+                        <div class="w-16 h-16 bg-accent-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3a1 1 0 011-1h6a1 1 0 011 1v4h3a2 2 0 012 2v1a2 2 0 01-2 2H6a2 2 0 01-2-2V9a2 2 0 012-2h2z"/>
+                            </svg>
+                        </div>
+                        <h4 class="font-cta font-semibold text-text-primary mb-2">Forfait Hebdomadaire</h4>
+                        <div class="text-2xl font-bold text-accent mb-2">140 000 MGA</div>
+                        <div class="text-sm text-text-secondary mb-4">par semaine (14h)</div>
+                        <ul class="text-xs text-text-secondary space-y-1">
+                            <li>2h/jour × 7 jours</li>
+                            <li>Soins complets</li>
+                            <li>Suivi médical</li>
+                        </ul>
+                    </div>
+
+                    <div class="card text-center border-2 border-accent">
+                        <div class="absolute -top-2 left-1/2 transform -translate-x-1/2">
+                            <span class="bg-accent text-white px-3 py-1 rounded-full text-xs font-cta">Recommandé</span>
+                        </div>
+                        <div class="w-16 h-16 bg-accent-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                            </svg>
+                        </div>
+                        <h4 class="font-cta font-semibold text-text-primary mb-2">Forfait Mensuel</h4>
+                        <div class="text-2xl font-bold text-accent mb-2">480 000 MGA</div>
+                        <div class="text-sm text-text-secondary mb-4">par mois (60h)</div>
+                        <ul class="text-xs text-text-secondary space-y-1">
+                            <li>2h/jour × 30 jours</li>
+                            <li>Aide-soignante dédiée</li>
+                            <li>Rapport famille</li>
+                        </ul>
+                    </div>
+
+                    <div class="card text-center">
+                        <div class="w-16 h-16 bg-accent-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                            </svg>
+                        </div>
+                        <h4 class="font-cta font-semibold text-text-primary mb-2">Garde 24h/24</h4>
+                        <div class="text-2xl font-bold text-accent mb-2">1 200 000 MGA</div>
+                        <div class="text-sm text-text-secondary mb-4">par mois</div>
+                        <ul class="text-xs text-text-secondary space-y-1">
+                            <li>Présence permanente</li>
+                            <li>Soins intensifs</li>
+                            <li>Urgences médicales</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Training Pricing -->
+            <div>
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-headline font-bold text-text-primary mb-2">
+                        Formation Professionnelle
+                    </h3>
+                    <p class="text-text-secondary">
+                        Certifications reconnues avec garantie d'emploi
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="card">
+                        <div class="text-center mb-4">
+                            <h4 class="text-lg font-cta font-semibold text-text-primary mb-2">Formation AVS</h4>
+                            <div class="text-2xl font-bold text-secondary mb-1">180 000 MGA</div>
+                            <div class="text-sm text-text-secondary">3 mois - Certificat inclus</div>
+                        </div>
+                        <div class="aspect-w-16 aspect-h-9 mb-4 rounded-lg overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Formation AVS" class="w-full h-24 object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        </div>
+                        <ul class="space-y-2 mb-4 text-sm">
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-success mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                120h de formation théorique
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-success mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                80h de stage pratique
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-success mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Certificat reconnu Madagascar
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="btn-secondary w-full text-center">
+                            S'inscrire
+                        </a>
+                    </div>
+
+                    <div class="card border-2 border-secondary">
+                        <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                            <span class="bg-secondary text-white px-4 py-1 rounded-full text-xs font-cta">Plus Demandé</span>
+                        </div>
+                        <div class="text-center mb-4">
+                            <h4 class="text-lg font-cta font-semibold text-text-primary mb-2">Formation Aide-Soignante</h4>
+                            <div class="text-2xl font-bold text-secondary mb-1">320 000 MGA</div>
+                            <div class="text-sm text-text-secondary">6 mois - Diplôme d'État</div>
+                        </div>
+                        <div class="aspect-w-16 aspect-h-9 mb-4 rounded-lg overflow-hidden">
+                            <img src="https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Formation Aide-Soignante" class="w-full h-24 object-cover" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2021/10/11/17/54/doctor-6701410_1280.jpg'; this.onerror=null;" />
+                        </div>
+                        <ul class="space-y-2 mb-4 text-sm">
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-success mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                240h de formation complète
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-success mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                160h de stage hospitalier
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-success mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Garantie d'emploi 95%
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="btn-secondary w-full text-center">
+                            S'inscrire
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <div class="text-center mb-4">
+                            <h4 class="text-lg font-cta font-semibold text-text-primary mb-2">Formation Secourisme</h4>
+                            <div class="text-2xl font-bold text-secondary mb-1">85 000 MGA</div>
+                            <div class="text-sm text-text-secondary">1 mois - Certification PSC1</div>
+                        </div>
+                        <div class="aspect-w-16 aspect-h-9 mb-4 rounded-lg overflow-hidden">
+                            <img src="https://images.pixabay.com/photo/2021/10/11/17/54/doctor-6701410_1280.jpg" alt="Formation Secourisme" class="w-full h-24 object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+                        </div>
+                        <ul class="space-y-2 mb-4 text-sm">
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-success mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                40h de formation intensive
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-success mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Pratique sur mannequins
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-success mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Certification officielle
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="btn-secondary w-full text-center">
+                            S'inscrire
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Plans Modal -->
+    <div id="paymentModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-white rounded-lg max-w-2xl w-full max-h-screen overflow-y-auto">
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-6">
+                        <h3 class="text-2xl font-headline font-bold text-text-primary">Plans de Paiement Flexibles</h3>
+                        <button onclick="closePaymentModal()" class="text-text-secondary hover:text-text-primary">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="card bg-primary-50 border border-primary-200">
+                            <div class="flex items-center justify-between mb-4">
+                                <h4 class="font-cta font-semibold text-text-primary">Paiement Mensuel</h4>
+                                <span class="bg-primary text-white px-3 py-1 rounded-full text-sm">Sans Frais</span>
+                            </div>
+                            <p class="text-text-secondary mb-4">Payez chaque mois sans engagement long terme</p>
+                            <div class="flex items-center text-sm text-text-secondary">
+                                <svg class="w-4 h-4 text-success mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Aucun frais supplémentaire
+                            </div>
+                        </div>
+
+                        <div class="card bg-accent-50 border border-accent-200">
+                            <div class="flex items-center justify-between mb-4">
+                                <h4 class="font-cta font-semibold text-text-primary">Paiement Trimestriel</h4>
+                                <span class="bg-accent text-white px-3 py-1 rounded-full text-sm">-5%</span>
+                            </div>
+                            <p class="text-text-secondary mb-4">Payez tous les 3 mois et économisez 5%</p>
+                            <div class="flex items-center text-sm text-text-secondary">
+                                <svg class="w-4 h-4 text-success mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Réduction de 5% sur le total
+                            </div>
+                        </div>
+
+                        <div class="card bg-success-50 border border-success-200">
+                            <div class="flex items-center justify-between mb-4">
+                                <h4 class="font-cta font-semibold text-text-primary">Paiement Annuel</h4>
+                                <span class="bg-success text-white px-3 py-1 rounded-full text-sm">-10%</span>
+                            </div>
+                            <p class="text-text-secondary mb-4">Payez l'année complète et économisez 10%</p>
+                            <div class="flex items-center text-sm text-text-secondary">
+                                <svg class="w-4 h-4 text-success mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Réduction de 10% sur le total
+                            </div>
+                        </div>
+
+                        <div class="bg-warning-50 border border-warning-200 rounded-lg p-4">
+                            <div class="flex items-start">
+                                <svg class="w-5 h-5 text-warning mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <div>
+                                    <h5 class="font-cta font-semibold text-warning-700 mb-1">Aide Financière Disponible</h5>
+                                    <p class="text-sm text-warning-600">
+                                        Nous proposons des solutions de financement pour les familles ayant des difficultés financières. 
+                                        Contactez-nous pour discuter de votre situation.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <a href="contact.html" class="btn-primary flex-1 text-center">
+                                Discuter des Options
+                            </a>
+                            <button onclick="closePaymentModal()" class="btn-secondary flex-1">
+                                Fermer
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Insurance Compatibility Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-headline font-bold text-text-primary mb-4">
+                    Compatibilité Assurance & Aides
+                </h2>
+                <p class="text-lg text-text-secondary">
+                    Vérifiez vos droits aux remboursements et aides disponibles
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-cta font-semibold text-text-primary mb-4">Assurances Acceptées</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 text-success mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <span class="text-text-secondary">CNAPS (Caisse Nationale de Prévoyance Sociale)</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 text-success mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <span class="text-text-secondary">Assurances privées partenaires</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 text-success mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <span class="text-text-secondary">Mutuelles de santé</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 text-success mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <span class="text-text-secondary">Assurances internationales</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-cta font-semibold text-text-primary mb-4">Aides Disponibles</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 text-accent mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
+                                </svg>
+                                <span class="text-text-secondary">Aide sociale départementale</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 text-accent mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
+                                </svg>
+                                <span class="text-text-secondary">Allocations familiales</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 text-accent mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
+                                </svg>
+                                <span class="text-text-secondary">Crédit d'impôt services</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 text-accent mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
+                                </svg>
+                                <span class="text-text-secondary">Bourses de formation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-border">
+                    <div class="text-center">
+                        <p class="text-text-secondary mb-4">
+                            Besoin d'aide pour vérifier vos droits aux remboursements?
+                        </p>
+                        <a href="contact.html" class="btn-accent">
+                            Consultation Gratuite Assurance
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transparent Fee Guarantee -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-8">
+                <div class="w-20 h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-headline font-bold mb-4">
+                    Notre Garantie Transparence
+                </h2>
+                <p class="text-xl opacity-90 mb-8">
+                    Aucun coût caché, aucune surprise sur votre facture
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-cta font-semibold mb-2">Prix Fixes</h3>
+                    <p class="text-sm opacity-80">Tarifs garantis sans augmentation surprise</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-cta font-semibold mb-2">Transparence Totale</h3>
+                    <p class="text-sm opacity-80">Détail complet de tous les coûts inclus</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-cta font-semibold mb-2">Remboursement</h3>
+                    <p class="text-sm opacity-80">Garantie satisfait ou remboursé 30 jours</p>
+                </div>
+            </div>
+
+            <div class="bg-white bg-opacity-10 rounded-lg p-6">
+                <p class="text-lg font-medium mb-4">
+                    "Nous nous engageons à une transparence totale sur nos tarifs. 
+                    Chaque famille mérite de connaître exactement ce qu'elle paie et pourquoi."
+                </p>
+                <p class="text-sm opacity-80">
+                    - Direction FI.MI.BEA.MA Care
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Pricing -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-headline font-bold text-text-primary mb-4">
+                    Questions Fréquentes sur les Tarifs
+                </h2>
+                <p class="text-lg text-text-secondary">
+                    Réponses aux questions les plus courantes sur nos prix
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <div class="card">
+                    <button class="w-full text-left flex justify-between items-center" onclick="toggleFAQ(1)">
+                        <h3 class="font-cta font-semibold text-text-primary">Les tarifs incluent-ils tous les soins médicaux?</h3>
+                        <svg id="faq-icon-1" class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div id="faq-content-1" class="hidden mt-4 text-text-secondary">
+                        <p>Oui, nos tarifs d'hébergement incluent tous les soins médicaux de base, les consultations médicales régulières, les médicaments courants, et la surveillance 24h/24. Seuls les soins spécialisés externes peuvent faire l'objet d'un supplément, toujours communiqué à l'avance.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <button class="w-full text-left flex justify-between items-center" onclick="toggleFAQ(2)">
+                        <h3 class="font-cta font-semibold text-text-primary">Puis-je modifier mon forfait de soins à domicile?</h3>
+                        <svg id="faq-icon-2" class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div id="faq-content-2" class="hidden mt-4 text-text-secondary">
+                        <p>Absolument. Nos forfaits de soins à domicile sont flexibles et peuvent être ajustés selon l'évolution des besoins. Vous pouvez augmenter ou diminuer les heures de soins avec un préavis de 48h, sans pénalité.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <button class="w-full text-left flex justify-between items-center" onclick="toggleFAQ(3)">
+                        <h3 class="font-cta font-semibold text-primary">Y a-t-il des frais d'inscription ou de dossier?</h3>
+                        <svg id="faq-icon-3" class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div id="faq-content-3" class="hidden mt-4 text-text-secondary">
+                        <p>Non, nous ne facturons aucun frais d'inscription, de dossier ou d'adhésion. Le seul coût est celui du service choisi. Notre engagement transparence signifie aucun coût caché.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <button class="w-full text-left flex justify-between items-center" onclick="toggleFAQ(4)">
+                        <h3 class="font-cta font-semibold text-text-primary">Les formations sont-elles éligibles au financement?</h3>
+                        <svg id="faq-icon-4" class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div id="faq-content-4" class="hidden mt-4 text-text-secondary">
+                        <p>Oui, nos formations sont éligibles à plusieurs dispositifs de financement : CPF (Compte Personnel de Formation), bourses régionales, financement employeur, et paiement échelonné sans frais. Nous vous accompagnons dans les démarches.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <button class="w-full text-left flex justify-between items-center" onclick="toggleFAQ(5)">
+                        <h3 class="font-cta font-semibold text-text-primary">Que se passe-t-il en cas d'hospitalisation?</h3>
+                        <svg id="faq-icon-5" class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div id="faq-content-5" class="hidden mt-4 text-text-secondary">
+                        <p>En cas d'hospitalisation, nous suspendons automatiquement la facturation de l'hébergement après 48h. La chambre reste réservée pendant 30 jours sans frais supplémentaires. Pour les soins à domicile, nous adaptons les services selon les besoins post-hospitalisation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-primary text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-4xl font-headline font-bold mb-6">
+                Prêt à Découvrir Nos Services?
+            </h2>
+            <p class="text-xl mb-8 opacity-90">
+                Contactez-nous pour une consultation gratuite et un devis personnalisé selon vos besoins spécifiques.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-white text-primary px-8 py-4 rounded-lg font-cta font-semibold hover:bg-gray-100 transition-colors">
+                    Consultation Gratuite
+                </a>
+                <a href="residential_care_overview.html" class="border-2 border-white text-white px-8 py-4 rounded-lg font-cta font-semibold hover:bg-white hover:text-primary transition-colors">
+                    Visiter nos Installations
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <svg class="h-8 w-auto mr-3" viewBox="0 0 200 60" fill="none">
+                            <rect x="10" y="10" width="40" height="40" rx="8" fill="white"/>
+                            <path d="M20 25h20M20 30h15M20 35h20" stroke="#2B4D2A" stroke-width="2" stroke-linecap="round"/>
+                            <text x="60" y="25" font-family="Inter" font-weight="700" font-size="16" fill="white">FI.MI.BEA.MA</text>
+                            <text x="60" y="40" font-family="Inter" font-weight="400" font-size="12" fill="white">Care</text>
+                        </svg>
+                    </div>
+                    <p class="text-gray-300 text-sm">
+                        Plateforme complète de services de santé pour les personnes âgées à Madagascar.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-white transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-white transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-white transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="font-cta font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="residential_care_overview.html" class="text-gray-300 hover:text-white transition-colors">Hébergement Résidentiel</a></li>
+                        <li><a href="home_care_services.html" class="text-gray-300 hover:text-white transition-colors">Soins à Domicile</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-white transition-colors">Formation Professionnelle</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white transition-colors">Consultation</a></li>
+                    </ul>
+                </div>
+
+                <!-- Information -->
+                <div>
+                    <h3 class="font-cta font-semibold mb-4">Information</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="about.html" class="text-gray-300 hover:text-white transition-colors">À Propos</a></li>
+                        <li><a href="pricing.html" class="text-gray-300 hover:text-white transition-colors">Tarifs</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-white transition-colors">FAQ</a></li>
+                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-white transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="font-cta font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            +261 34 12 345 67
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            contact@fimibeama.mg
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-4 h-4 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            Antananarivo, Madagascar
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-600 mt-8 pt-8 text-center">
+                <p class="text-gray-300 text-sm">
+                    © 2025 FI.MI.BEA.MA Care. Tous droits réservés.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        // Service card selection
+        document.addEventListener('DOMContentLoaded', function() {
+            const serviceCards = document.querySelectorAll('.service-card');
+            serviceCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    // Remove active state from all cards
+                    serviceCards.forEach(c => {
+                        c.classList.remove('border-primary', 'border-accent', 'border-secondary');
+                        c.classList.add('border-border');
+                    });
+                    
+                    // Add active state to clicked card
+                    const input = this.previousElementSibling;
+                    input.checked = true;
+                    
+                    if (input.value === 'residential') {
+                        this.classList.remove('border-border');
+                        this.classList.add('border-primary');
+                    } else if (input.value === 'homecare') {
+                        this.classList.remove('border-border');
+                        this.classList.add('border-accent');
+                    } else if (input.value === 'training') {
+                        this.classList.remove('border-border');
+                        this.classList.add('border-secondary');
+                    }
+                    
+                    updateCalculator();
+                });
+            });
+        });
+
+        // Calculator functionality
+        function updateCalculator() {
+            const serviceType = document.querySelector('input[name="serviceType"]:checked')?.value;
+            const calculatorOptions = document.getElementById('calculatorOptions');
+            const calculatorResults = document.getElementById('calculatorResults');
+
+            if (!serviceType) {
+                calculatorOptions.classList.add('hidden');
+                calculatorResults.classList.add('hidden');
+                return;
+            }
+
+            calculatorOptions.classList.remove('hidden');
+            
+            // Clear previous options
+            calculatorOptions.innerHTML = '';
+
+            if (serviceType === 'residential') {
+                calculatorOptions.innerHTML = `
+                    <div>
+                        <label class="block text-sm font-medium text-text-primary mb-2">Type de chambre</label>
+                        <select id="roomType" class="form-input" onchange="calculatePrice()">
+                            <option value="">Sélectionnez une chambre</option>
+                            <option value="standard">Chambre Standard - 450 000 MGA/mois</option>
+                            <option value="premium">Chambre Premium - 650 000 MGA/mois</option>
+                            <option value="vip">Suite VIP - 950 000 MGA/mois</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-text-primary mb-2">Durée estimée</label>
+                        <select id="duration" class="form-input" onchange="calculatePrice()">
+                            <option value="1">1 mois</option>
+                            <option value="3">3 mois (-5%)</option>
+                            <option value="6">6 mois (-8%)</option>
+                            <option value="12" selected>12 mois (-10%)</option>
+                        </select>
+                    </div>
+                `;
+            } else if (serviceType === 'homecare') {
+                calculatorOptions.innerHTML = `
+                    <div>
+                        <label class="block text-sm font-medium text-text-primary mb-2">Type de forfait</label>
+                        <select id="careType" class="form-input" onchange="calculatePrice()">
+                            <option value="">Sélectionnez un forfait</option>
+                            <option value="visit">Visite ponctuelle - 25 000 MGA/visite</option>
+                            <option value="weekly">Forfait hebdomadaire - 140 000 MGA/semaine</option>
+                            <option value="monthly">Forfait mensuel - 480 000 MGA/mois</option>
+                            <option value="fulltime">Garde 24h/24 - 1 200 000 MGA/mois</option>
+                        </select>
+                    </div>
+                    <div id="visitOptions" class="hidden">
+                        <label class="block text-sm font-medium text-text-primary mb-2">Nombre de visites par mois</label>
+                        <input type="number" id="visitCount" class="form-input" min="1" max="30" value="4" onchange="calculatePrice()">
+                    </div>
+                `;
+            } else if (serviceType === 'training') {
+                calculatorOptions.innerHTML = `
+                    <div>
+                        <label class="block text-sm font-medium text-text-primary mb-2">Type de formation</label>
+                        <select id="trainingType" class="form-input" onchange="calculatePrice()">
+                            <option value="">Sélectionnez une formation</option>
+                            <option value="avs">Formation AVS - 180 000 MGA</option>
+                            <option value="aide">Formation Aide-Soignante - 320 000 MGA</option>
+                            <option value="secours">Formation Secourisme - 85 000 MGA</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-text-primary mb-2">Mode de paiement</label>
+                        <select id="paymentMode" class="form-input" onchange="calculatePrice()">
+                            <option value="full">Paiement intégral</option>
+                            <option value="split">Paiement en 3 fois (+5%)</option>
+                            <option value="monthly">Paiement mensuel (+10%)</option>
+                        </select>
+                    </div>
+                `;
+            }
+
+            calculatePrice();
+        }
+
+        function calculatePrice() {
+            const serviceType = document.querySelector('input[name="serviceType"]:checked')?.value;
+            const calculatorResults = document.getElementById('calculatorResults');
+            const totalPrice = document.getElementById('totalPrice');
+            const priceBreakdown = document.getElementById('priceBreakdown');
+
+            if (!serviceType) return;
+
+            let price = 0;
+            let breakdown = '';
+
+            if (serviceType === 'residential') {
+                const roomType = document.getElementById('roomType')?.value;
+                const duration = parseInt(document.getElementById('duration')?.value) || 1;
+
+                if (roomType) {
+                    let basePrice = 0;
+                    let roomName = '';
+
+                    switch(roomType) {
+                        case 'standard':
+                            basePrice = 450000;
+                            roomName = 'Chambre Standard';
+                            break;
+                        case 'premium':
+                            basePrice = 650000;
+                            roomName = 'Chambre Premium';
+                            break;
+                        case 'vip':
+                            basePrice = 950000;
+                            roomName = 'Suite VIP';
+                            break;
+                    }
+
+                    let discount = 0;
+                    if (duration >= 12) discount = 0.10;
+                    else if (duration >= 6) discount = 0.08;
+                    else if (duration >= 3) discount = 0.05;
+
+                    price = basePrice * duration * (1 - discount);
+                    
+                    breakdown = `
+                        <div class="flex justify-between">
+                            <span>${roomName} × ${duration} mois</span>
+                            <span>${(basePrice * duration).toLocaleString('fr-FR')} MGA</span>
+                        </div>
+                        ${discount > 0 ? `
+                        <div class="flex justify-between text-success">
+                            <span>Réduction ${(discount * 100)}%</span>
+                            <span>-${(basePrice * duration * discount).toLocaleString('fr-FR')} MGA</span>
+                        </div>
+                        ` : ''}
+                    `;
+                }
+            } else if (serviceType === 'homecare') {
+                const careType = document.getElementById('careType')?.value;
+
+                if (careType === 'visit') {
+                    const visitCount = parseInt(document.getElementById('visitCount')?.value) || 4;
+                    document.getElementById('visitOptions').classList.remove('hidden');
+                    price = 25000 * visitCount;
+                    breakdown = `
+                        <div class="flex justify-between">
+                            <span>Visites ponctuelles × ${visitCount}</span>
+                            <span>${price.toLocaleString('fr-FR')} MGA</span>
+                        </div>
+                    `;
+                } else {
+                    document.getElementById('visitOptions').classList.add('hidden');
+                    switch(careType) {
+                        case 'weekly':
+                            price = 140000 * 4; // 4 semaines
+                            breakdown = `
+                                <div class="flex justify-between">
+                                    <span>Forfait hebdomadaire × 4 semaines</span>
+                                    <span>${price.toLocaleString('fr-FR')} MGA</span>
+                                </div>
+                            `;
+                            break;
+                        case 'monthly':
+                            price = 480000;
+                            breakdown = `
+                                <div class="flex justify-between">
+                                    <span>Forfait mensuel</span>
+                                    <span>${price.toLocaleString('fr-FR')} MGA</span>
+                                </div>
+                            `;
+                            break;
+                        case 'fulltime':
+                            price = 1200000;
+                            breakdown = `
+                                <div class="flex justify-between">
+                                    <span>Garde 24h/24</span>
+                                    <span>${price.toLocaleString('fr-FR')} MGA</span>
+                                </div>
+                            `;
+                            break;
+                    }
+                }
+            } else if (serviceType === 'training') {
+                const trainingType = document.getElementById('trainingType')?.value;
+                const paymentMode = document.getElementById('paymentMode')?.value;
+
+                if (trainingType) {
+                    let basePrice = 0;
+                    let trainingName = '';
+
+                    switch(trainingType) {
+                        case 'avs':
+                            basePrice = 180000;
+                            trainingName = 'Formation AVS';
+                            break;
+                        case 'aide':
+                            basePrice = 320000;
+                            trainingName = 'Formation Aide-Soignante';
+                            break;
+                        case 'secours':
+                            basePrice = 85000;
+                            trainingName = 'Formation Secourisme';
+                            break;
+                    }
+
+                    let surcharge = 0;
+                    if (paymentMode === 'split') surcharge = 0.05;
+                    else if (paymentMode === 'monthly') surcharge = 0.10;
+
+                    price = basePrice * (1 + surcharge);
+
+                    breakdown = `
+                        <div class="flex justify-between">
+                            <span>${trainingName}</span>
+                            <span>${basePrice.toLocaleString('fr-FR')} MGA</span>
+                        </div>
+                        ${surcharge > 0 ? `
+                        <div class="flex justify-between text-warning">
+                            <span>Frais paiement échelonné</span>
+                            <span>+${(basePrice * surcharge).toLocaleString('fr-FR')} MGA</span>
+                        </div>
+                        ` : ''}
+                    `;
+                }
+            }
+
+            if (price > 0) {
+                totalPrice.textContent = `${price.toLocaleString('fr-FR')} MGA`;
+                priceBreakdown.innerHTML = breakdown;
+                calculatorResults.classList.remove('hidden');
+            } else {
+                calculatorResults.classList.add('hidden');
+            }
+        }
+
+        // Payment plans modal
+        function showPaymentPlans() {
+            document.getElementById('paymentModal').classList.remove('hidden');
+        }
+
+        function closePaymentModal() {
+            document.getElementById('paymentModal').classList.add('hidden');
+        }
+
+        // FAQ toggle
+        function toggleFAQ(index) {
+            const content = document.getElementById(`faq-content-${index}`);
+            const icon = document.getElementById(`faq-icon-${index}`);
+            
+            content.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('paymentModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closePaymentModal();
+            }
+        });
+
+        // Add pulse animation to emergency button
+        const style = document.createElement('style');
+        style.textContent = `
+            .pulse-animation {
+                animation: pulse 2s infinite;
+            }
+            
+            @keyframes pulse {
+                0% {
+                    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+                }
+                70% {
+                    box-shadow: 0 0 0 10px rgba(239, 68, 68, 0);
+                }
+                100% {
+                    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

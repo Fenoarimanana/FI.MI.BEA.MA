@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../public/favicon.ico">
+    <title>Services de Soins à Domicile - FI.MI.BEA.MA Care</title>
+    <meta name="description" content="Services personnalisés de soins à domicile à Madagascar - Soins quotidiens, accompagnement de nuit, services de compagnie avec tarification transparente et profils de soignants qualifiés." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Ffimibeama7084back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="font-body bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <nav class="bg-white shadow-subtle sticky top-0 z-50" id="main-navigation">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <svg class="h-10 w-auto" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="10" y="15" width="30" height="30" rx="15" fill="#239148"/>
+                            <rect x="20" y="25" width="10" height="10" rx="2" fill="white"/>
+                            <text x="50" y="25" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="#2B4D2A">FI.MI.BEA.MA</text>
+                            <text x="50" y="40" font-family="Source Sans Pro, sans-serif" font-size="12" fill="#546E7A">Care</text>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="homepage.html" class="text-text-secondary hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-gentle">Accueil</a>
+                        <a href="about.html" class="text-text-secondary hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-gentle">À Propos</a>
+                        <a href="residential_care.html" class="text-text-secondary hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-gentle">Hébergement</a>
+                        <a href="home_care_services.html" class="text-primary-600 font-semibold px-3 py-2 rounded-md text-sm font-medium">Soins à Domicile</a>
+                        <a href="resources.html" class="text-text-secondary hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-gentle">Ressources</a>
+                        <a href="pricing.html" class="text-primary block px-3 py-2 rounded-md text-base font-medium">Tarifs</a>
+                        <a href="contact.html" class="bg-primary-600 text-white px-4 py-2 rounded-button text-sm font-medium hover:bg-primary-700 transition-gentle">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-text-secondary hover:text-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-600 p-2" id="mobile-menu-button">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-border">
+                <a href="homepage.html" class="text-text-secondary hover:text-primary-600 block px-3 py-2 rounded-md text-base font-medium">Accueil</a>
+                <a href="about.html" class="text-text-secondary hover:text-primary-600 block px-3 py-2 rounded-md text-base font-medium">À Propos</a>
+                <a href="residential_care.html" class="text-text-secondary hover:text-primary-600 block px-3 py-2 rounded-md text-base font-medium">Hébergement</a>
+                <a href="home_care_services.html" class="text-primary-600 block px-3 py-2 rounded-md text-base font-medium">Soins à Domicile</a>
+                <a href="resources.html" class="text-text-secondary hover:text-primary-600 block px-3 py-2 rounded-md text-base font-medium">Ressources</a>
+                <a href="contact.html" class="bg-primary-600 text-white block px-3 py-2 rounded-button text-base font-medium mx-3 mt-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-50 to-white overflow-hidden" id="hero-section">
+        <div class="absolute inset-0 bg-white opacity-50"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Hero Content -->
+                <div class="text-center lg:text-left">
+                    <h1 class="font-headline text-4xl lg:text-6xl font-bold text-text-primary mb-6 leading-tight">
+                        Soins à Domicile
+                        <span class="text-primary-600">Personnalisés</span>
+                    </h1>
+                    <p class="text-xl text-text-secondary mb-8 leading-relaxed">
+                        Maintenez votre autonomie dans le confort de votre foyer avec nos services de soins professionnels adaptés à vos besoins spécifiques.
+                    </p>
+                    
+                    <!-- Emergency Contact -->
+                    <div class="bg-primary-100 rounded-card p-4 mb-8">
+                        <div class="flex items-center justify-center lg:justify-start">
+                            <svg class="w-6 h-6 text-primary-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            <div>
+                                <div class="font-semibold text-primary-700">Urgences 24h/24</div>
+                                <div class="text-primary-600">+261 34 12 345 67</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <button onclick="scrollToBooking()" class="bg-primary-600 text-white px-8 py-4 rounded-button font-semibold hover:bg-primary-700 transition-gentle shadow-card hover:shadow-card-hover">
+                            Réserver un Service
+                        </button>
+                        <button onclick="scrollToCalculator()" class="border-2 border-primary-600 text-primary-600 px-8 py-4 rounded-button font-semibold hover:bg-primary-600 hover:text-white transition-gentle">
+                            Calculer les Tarifs
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="relative">
+                    <div class="aspect-w-4 aspect-h-3 rounded-card overflow-hidden shadow-card">
+                        <img src="../public\ioe.jpg" alt="Soignant professionnel prodiguant des soins à domicile" class="w-full h-96 object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+                    </div>
+                    
+                    <!-- Floating Availability Card -->
+                    <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-card shadow-card">
+                        <div class="text-center">
+                            <div class="flex items-center justify-center mb-2">
+                                <div class="w-3 h-3 bg-success rounded-full mr-2"></div>
+                                <div class="text-sm font-semibold text-text-primary">Disponible</div>
+                            </div>
+                            <div class="text-xs text-text-secondary">Soignants qualifiés</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Categories -->
+    <section class="py-16 bg-white" id="service-categories">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-headline text-3xl lg:text-4xl font-bold text-text-primary mb-4">
+                    Nos Services à Domicile
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Des soins personnalisés adaptés à vos besoins, disponibles jour et nuit avec des professionnels qualifiés.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Daily Care -->
+                <div class="group bg-white rounded-card shadow-card hover:shadow-card-hover transition-gentle p-8 text-center">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-200 transition-gentle">
+                        <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-headline text-xl font-semibold text-text-primary mb-4">Soins Quotidiens</h3>
+                    <p class="text-text-secondary mb-6 leading-relaxed">
+                        Assistance pour les activités quotidiennes, soins d'hygiène, préparation des repas et accompagnement médical.
+                    </p>
+                    <div class="text-primary-600 font-semibold mb-4">À partir de 15 000,00 MGA/heure</div>
+                    <button onclick="selectService('daily')" class="w-full bg-primary-50 text-primary-600 py-3 rounded-button font-semibold hover:bg-primary-100 transition-gentle">
+                        Choisir ce service
+                    </button>
+                </div>
+
+                <!-- Nightly Care -->
+                <div class="group bg-white rounded-card shadow-card hover:shadow-card-hover transition-gentle p-8 text-center">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-200 transition-gentle">
+                        <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-headline text-xl font-semibold text-text-primary mb-4">Soins Nocturnes</h3>
+                    <p class="text-text-secondary mb-6 leading-relaxed">
+                        Surveillance nocturne, assistance d'urgence, aide au coucher et lever, sécurité 24h/24.
+                    </p>
+                    <div class="text-primary-600 font-semibold mb-4">À partir de 25 000,00 MGA/nuit</div>
+                    <button onclick="selectService('nightly')" class="w-full bg-primary-50 text-primary-600 py-3 rounded-button font-semibold hover:bg-primary-100 transition-gentle">
+                        Choisir ce service
+                    </button>
+                </div>
+
+                <!-- Companion Services -->
+                <div class="group bg-white rounded-card shadow-card hover:shadow-card-hover transition-gentle p-8 text-center">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-200 transition-gentle">
+                        <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-headline text-xl font-semibold text-text-primary mb-4">Services de Compagnie</h3>
+                    <p class="text-text-secondary mb-6 leading-relaxed">
+                        Accompagnement social, sorties, activités récréatives, soutien émotionnel et conversation.
+                    </p>
+                    <div class="text-primary-600 font-semibold mb-4">À partir de 12 000,00 MGA/heure</div>
+                    <button onclick="selectService('companion')" class="w-full bg-primary-50 text-primary-600 py-3 rounded-button font-semibold hover:bg-primary-100 transition-gentle">
+                        Choisir ce service
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Calculator -->
+    <section class="py-16 bg-primary-50" id="service-calculator">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-headline text-3xl lg:text-4xl font-bold text-text-primary mb-4">
+                    Calculateur de Tarifs
+                </h2>
+                <p class="text-xl text-text-secondary">
+                    Estimez le coût de vos services personnalisés en quelques clics.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-card shadow-card p-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Calculator Form -->
+                    <div>
+                        <h3 class="font-headline text-xl font-semibold text-text-primary mb-6">Configuration du Service</h3>
+                        
+                        <!-- Service Type -->
+                        <div class="mb-6">
+                            <label class="block text-sm font-semibold text-text-primary mb-3">Type de Service</label>
+                            <div class="space-y-2">
+                                <label class="flex items-center">
+                                    <input type="radio" name="serviceType" value="daily" class="text-primary-600 focus:ring-primary-600" onchange="calculatePrice()" />
+                                    <span class="ml-3">Soins Quotidiens (15 000,00 MGA/h)</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="serviceType" value="nightly" class="text-primary-600 focus:ring-primary-600" onchange="calculatePrice()" />
+                                    <span class="ml-3">Soins Nocturnes (25 000,00 MGA/nuit)</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="serviceType" value="companion" class="text-primary-600 focus:ring-primary-600" onchange="calculatePrice()" />
+                                    <span class="ml-3">Services de Compagnie (12 000,00 MGA/h)</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Duration -->
+                        <div class="mb-6">
+                            <label for="duration" class="block text-sm font-semibold text-text-primary mb-2">Durée (heures/jour)</label>
+                            <input type="number" id="duration" min="1" max="24" value="4" class="w-full px-4 py-3 border border-border rounded-button focus:ring-2 focus:ring-primary-600 focus:border-primary-600" onchange="calculatePrice()" />
+                        </div>
+
+                        <!-- Frequency -->
+                        <div class="mb-6">
+                            <label for="frequency" class="block text-sm font-semibold text-text-primary mb-2">Fréquence (jours/semaine)</label>
+                            <input type="number" id="frequency" min="1" max="7" value="5" class="w-full px-4 py-3 border border-border rounded-button focus:ring-2 focus:ring-primary-600 focus:border-primary-600" onchange="calculatePrice()" />
+                        </div>
+
+                        <!-- Additional Services -->
+                        <div class="mb-6">
+                            <label class="block text-sm font-semibold text-text-primary mb-3">Services Additionnels</label>
+                            <div class="space-y-2">
+                                <label class="flex items-center">
+                                    <input type="checkbox" id="medication" class="text-primary-600 focus:ring-primary-600" onchange="calculatePrice()" />
+                                    <span class="ml-3">Gestion des médicaments (+2 000,00 MGA/h)</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" id="transport" class="text-primary-600 focus:ring-primary-600" onchange="calculatePrice()" />
+                                    <span class="ml-3">Transport médical (+5 000,00 MGA/trajet)</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" id="housekeeping" class="text-primary-600 focus:ring-primary-600" onchange="calculatePrice()" />
+                                    <span class="ml-3">Entretien ménager (+3 000,00 MGA/h)</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Price Summary -->
+                    <div class="bg-primary-50 rounded-card p-6">
+                        <h3 class="font-headline text-xl font-semibold text-text-primary mb-6">Estimation Tarifaire</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex justify-between">
+                                <span class="text-text-secondary">Service de base :</span>
+                                <span id="basePrice" class="font-semibold">0,00 MGA</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-text-secondary">Services additionnels :</span>
+                                <span id="additionalPrice" class="font-semibold">0,00 MGA</span>
+                            </div>
+                            <div class="border-t border-border pt-4">
+                                <div class="flex justify-between text-lg">
+                                    <span class="font-semibold text-text-primary">Total hebdomadaire :</span>
+                                    <span id="weeklyTotal" class="font-bold text-primary-600">0,00 MGA</span>
+                                </div>
+                                <div class="flex justify-between text-sm text-text-secondary mt-2">
+                                    <span>Total mensuel estimé :</span>
+                                    <span id="monthlyTotal">0,00 MGA</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button onclick="proceedToBooking()" class="w-full bg-primary-600 text-white py-3 rounded-button font-semibold hover:bg-primary-700 transition-gentle mt-6">
+                            Réserver ce Service
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Caregiver Profiles -->
+    <section class="py-16 bg-white" id="caregiver-profiles">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-headline text-3xl lg:text-4xl font-bold text-text-primary mb-4">
+                    Nos Soignants Qualifiés
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Rencontrez notre équipe de professionnels expérimentés, formés selon nos standards d'excellence.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Caregiver 1 -->
+                <div class="bg-white rounded-card shadow-card hover:shadow-card-hover transition-gentle p-6">
+                    <div class="text-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Marie Rasoamanana - Aide-soignante certifiée" class="w-20 h-20 rounded-full object-cover mx-auto mb-4" loading="lazy" onerror="this.src='https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <h3 class="font-headline text-lg font-semibold text-text-primary">Marie Rasoamanana</h3>
+                        <p class="text-sm text-text-secondary">Aide-soignante certifiée</p>
+                    </div>
+                    
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center text-sm">
+                            <svg class="w-4 h-4 text-primary-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>8 ans d'expérience</span>
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <svg class="w-4 h-4 text-primary-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                            </svg>
+                            <span>Spécialiste Alzheimer</span>
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <svg class="w-4 h-4 text-primary-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                            </svg>
+                            <span>Français, Malagasy</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 bg-success rounded-full mr-2"></div>
+                            <span class="text-sm text-success font-semibold">Disponible</span>
+                        </div>
+                        <button onclick="selectCaregiver('marie')" class="bg-primary-600 text-white px-4 py-2 rounded-button text-sm font-semibold hover:bg-primary-700 transition-gentle">
+                            Choisir
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Caregiver 2 -->
+                <div class="bg-white rounded-card shadow-card hover:shadow-card-hover transition-gentle p-6">
+                    <div class="text-center mb-6">
+                        <img src="https://images.pixabay.com/photo/2017/03/05/00/34/people-2117069_1280.jpg" alt="Jean Rakoto - Infirmier diplômé" class="w-20 h-20 rounded-full object-cover mx-auto mb-4" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+                        <h3 class="font-headline text-lg font-semibold text-text-primary">Jean Rakoto</h3>
+                        <p class="text-sm text-text-secondary">Infirmier diplômé</p>
+                    </div>
+                    
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center text-sm">
+                            <svg class="w-4 h-4 text-primary-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>12 ans d'expérience</span>
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <svg class="w-4 h-4 text-primary-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                            <span>Soins palliatifs</span>
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <svg class="w-4 h-4 text-primary-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+                            </svg>
+                            <span>Soins nocturnes</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 bg-success rounded-full mr-2"></div>
+                            <span class="text-sm text-success font-semibold">Disponible</span>
+                        </div>
+                        <button onclick="selectCaregiver('jean')" class="bg-primary-600 text-white px-4 py-2 rounded-button text-sm font-semibold hover:bg-primary-700 transition-gentle">
+                            Choisir
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Caregiver 3 -->
+                <div class="bg-white rounded-card shadow-card hover:shadow-card-hover transition-gentle p-6">
+                    <div class="text-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Hanta Andrianina - Auxiliaire de vie" class="w-20 h-20 rounded-full object-cover mx-auto mb-4" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2021/07/14/17/32/manager-6466713_1280.jpg'; this.onerror=null;" />
+                        <h3 class="font-headline text-lg font-semibold text-text-primary">Hanta Andrianina</h3>
+                        <p class="text-sm text-text-secondary">Auxiliaire de vie</p>
+                    </div>
+                    
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center text-sm">
+                            <svg class="w-4 h-4 text-primary-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>5 ans d'expérience</span>
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <svg class="w-4 h-4 text-primary-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+                            </svg>
+                            <span>Activités quotidiennes</span>
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <svg class="w-4 h-4 text-primary-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                            <span>Accompagnement social</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 bg-warning rounded-full mr-2"></div>
+                            <span class="text-sm text-warning font-semibold">Occupé jusqu'au 28/09</span>
+                        </div>
+                        <button onclick="selectCaregiver('hanta')" class="bg-gray-400 text-white px-4 py-2 rounded-button text-sm font-semibold cursor-not-allowed" disabled>
+                            Indisponible
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <button onclick="viewAllCaregivers()" class="border-2 border-primary-600 text-primary-600 px-8 py-3 rounded-button font-semibold hover:bg-primary-600 hover:text-white transition-gentle">
+                    Voir Tous les Soignants
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking System -->
+    <section class="py-16 bg-primary-50" id="booking-system">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-headline text-3xl lg:text-4xl font-bold text-text-primary mb-4">
+                    Réservation de Service
+                </h2>
+                <p class="text-xl text-text-secondary">
+                    Planifiez vos soins à domicile en quelques étapes simples.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-card shadow-card p-8">
+                <form id="bookingForm" class="space-y-8">
+                    <!-- Step 1: Personal Information -->
+                    <div class="booking-step active" data-step="1">
+                        <h3 class="font-headline text-xl font-semibold text-text-primary mb-6">Informations Personnelles</h3>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="patientName" class="block text-sm font-semibold text-text-primary mb-2">Nom du patient *</label>
+                                <input type="text" id="patientName" required class="w-full px-4 py-3 border border-border rounded-button focus:ring-2 focus:ring-primary-600 focus:border-primary-600" />
+                            </div>
+                            <div>
+                                <label for="patientAge" class="block text-sm font-semibold text-text-primary mb-2">Âge *</label>
+                                <input type="number" id="patientAge" min="1" max="120" required class="w-full px-4 py-3 border border-border rounded-button focus:ring-2 focus:ring-primary-600 focus:border-primary-600" />
+                            </div>
+                            <div>
+                                <label for="contactName" class="block text-sm font-semibold text-text-primary mb-2">Nom du contact *</label>
+                                <input type="text" id="contactName" required class="w-full px-4 py-3 border border-border rounded-button focus:ring-2 focus:ring-primary-600 focus:border-primary-600" />
+                            </div>
+                            <div>
+                                <label for="contactPhone" class="block text-sm font-semibold text-text-primary mb-2">Téléphone *</label>
+                                <input type="tel" id="contactPhone" required class="w-full px-4 py-3 border border-border rounded-button focus:ring-2 focus:ring-primary-600 focus:border-primary-600" />
+                            </div>
+                            <div class="md:col-span-2">
+                                <label for="address" class="block text-sm font-semibold text-text-primary mb-2">Adresse complète *</label>
+                                <textarea id="address" rows="3" required class="w-full px-4 py-3 border border-border rounded-button focus:ring-2 focus:ring-primary-600 focus:border-primary-600"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Service Configuration -->
+                    <div class="booking-step hidden" data-step="2">
+                        <h3 class="font-headline text-xl font-semibold text-text-primary mb-6">Configuration du Service</h3>
+                        
+                        <div class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-semibold text-text-primary mb-3">Service sélectionné</label>
+                                <div id="selectedService" class="bg-primary-50 p-4 rounded-button">
+                                    <div class="font-semibold text-primary-700">Aucun service sélectionné</div>
+                                    <div class="text-sm text-primary-600">Veuillez retourner à la section services pour faire votre choix</div>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="startDate" class="block text-sm font-semibold text-text-primary mb-2">Date de début *</label>
+                                    <input type="date" id="startDate" required class="w-full px-4 py-3 border border-border rounded-button focus:ring-2 focus:ring-primary-600 focus:border-primary-600" />
+                                </div>
+                                <div>
+                                    <label for="preferredTime" class="block text-sm font-semibold text-text-primary mb-2">Heure préférée</label>
+                                    <select id="preferredTime" class="w-full px-4 py-3 border border-border rounded-button focus:ring-2 focus:ring-primary-600 focus:border-primary-600">
+                                        <option value>Sélectionner une heure</option>
+                                        <option value="morning">Matin (8h-12h)</option>
+                                        <option value="afternoon">Après-midi (12h-18h)</option>
+                                        <option value="evening">Soir (18h-22h)</option>
+                                        <option value="night">Nuit (22h-8h)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="specialNeeds" class="block text-sm font-semibold text-text-primary mb-2">Besoins spéciaux ou conditions médicales</label>
+                                <textarea id="specialNeeds" rows="4" placeholder="Décrivez les besoins spécifiques, conditions médicales, allergies, etc." class="w-full px-4 py-3 border border-border rounded-button focus:ring-2 focus:ring-primary-600 focus:border-primary-600"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Caregiver Selection -->
+                    <div class="booking-step hidden" data-step="3">
+                        <h3 class="font-headline text-xl font-semibold text-text-primary mb-6">Choix du Soignant</h3>
+                        
+                        <div id="selectedCaregiver" class="bg-primary-50 p-4 rounded-button mb-6">
+                            <div class="font-semibold text-primary-700">Aucun soignant sélectionné</div>
+                            <div class="text-sm text-primary-600">Veuillez choisir un soignant dans la section précédente</div>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div>
+                                <label class="flex items-center">
+                                    <input type="checkbox" id="autoMatch" class="text-primary-600 focus:ring-primary-600" />
+                                    <span class="ml-3">Permettre l'attribution automatique d'un soignant qualifié si le choix initial n'est pas disponible</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label for="caregiverPreferences" class="block text-sm font-semibold text-text-primary mb-2">Préférences particulières</label>
+                                <textarea id="caregiverPreferences" rows="3" placeholder="Langues préférées, expérience spécifique, personnalité, etc." class="w-full px-4 py-3 border border-border rounded-button focus:ring-2 focus:ring-primary-600 focus:border-primary-600"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Confirmation -->
+                    <div class="booking-step hidden" data-step="4">
+                        <h3 class="font-headline text-xl font-semibold text-text-primary mb-6">Confirmation et Paiement</h3>
+                        
+                        <div class="bg-gray-50 p-6 rounded-card mb-6">
+                            <h4 class="font-semibold text-text-primary mb-4">Résumé de la Réservation</h4>
+                            <div id="bookingSummary" class="space-y-2 text-sm">
+                                <!-- Summary will be populated by JavaScript -->
+                            </div>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div>
+                                <label class="flex items-center">
+                                    <input type="checkbox" id="termsAccepted" required class="text-primary-600 focus:ring-primary-600" />
+                                    <span class="ml-3">J'accepte les <a href="resources.html" class="text-primary-600 hover:text-primary-700">conditions d'utilisation</a> et la <a href="resources.html" class="text-primary-600 hover:text-primary-700">politique de confidentialité</a></span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="flex items-center">
+                                    <input type="checkbox" id="emergencyConsent" required class="text-primary-600 focus:ring-primary-600" />
+                                    <span class="ml-3">J'autorise FI.MI.BEA.MA Care à prendre les mesures d'urgence nécessaires en cas de besoin médical</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Buttons -->
+                    <div class="flex justify-between pt-8 border-t border-border">
+                        <button type="button" id="prevBtn" onclick="changeStep(-1)" class="bg-gray-300 text-gray-700 px-6 py-3 rounded-button font-semibold hover:bg-gray-400 transition-gentle" style="display: none;">
+                            Précédent
+                        </button>
+                        <div class="flex space-x-4">
+                            <button type="button" id="nextBtn" onclick="changeStep(1)" class="bg-primary-600 text-white px-6 py-3 rounded-button font-semibold hover:bg-primary-700 transition-gentle">
+                                Suivant
+                            </button>
+                            <button type="submit" id="submitBtn" class="bg-success text-white px-6 py-3 rounded-button font-semibold hover:bg-green-600 transition-gentle" style="display: none;">
+                                Confirmer la Réservation
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust & Testimonials -->
+    <section class="py-16 bg-white" id="testimonials">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-headline text-3xl lg:text-4xl font-bold text-text-primary mb-4">
+                    Témoignages de Nos Familles
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Découvrez les expériences de familles qui nous font confiance pour les soins à domicile.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-card shadow-card p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Noro Rakotomalala" class="w-12 h-12 rounded-full object-cover mr-4" loading="lazy" onerror="this.src='https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div>
+                            <div class="font-semibold text-text-primary">Noro Rakotomalala</div>
+                            <div class="text-sm text-text-secondary">Fille de patient</div>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary italic mb-4">
+                        "Grâce aux soins à domicile de FI.MI.BEA.MA, mon père peut rester chez lui en toute sécurité. Marie est exceptionnelle et très professionnelle."
+                    </p>
+                    <div class="flex text-yellow-400">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-card shadow-card p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Hery Andriamana" class="w-12 h-12 rounded-full object-cover mr-4" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg'; this.onerror=null;" />
+                        <div>
+                            <div class="font-semibold text-text-primary">Hery Andriamana</div>
+                            <div class="text-sm text-text-secondary">Patient</div>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary italic mb-4">
+                        "Les soins nocturnes m'ont permis de retrouver un sommeil paisible. Jean est très attentionné et compétent. Je recommande vivement."
+                    </p>
+                    <div class="flex text-yellow-400">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white" id="footer">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <svg class="h-8 w-auto mr-3" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="10" y="15" width="30" height="30" rx="15" fill="#239148"/>
+                            <rect x="20" y="25" width="10" height="10" rx="2" fill="white"/>
+                            <text x="50" y="25" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="white">FI.MI.BEA.MA</text>
+                            <text x="50" y="40" font-family="Source Sans Pro, sans-serif" font-size="12" fill="#9CA3AF">Care</text>
+                        </svg>
+                    </div>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Services de soins à domicile personnalisés avec des professionnels qualifiés pour maintenir votre autonomie dans le confort de votre foyer.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-gentle">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-gentle">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-gentle">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Liens Rapides</h3>
+                    <ul class="space-y-2">
+                        <li><a href="homepage.html" class="text-gray-300 hover:text-white transition-gentle">Accueil</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-white transition-gentle">À Propos</a></li>
+                        <li><a href="residential_care.html" class="text-gray-300 hover:text-white transition-gentle">Hébergement</a></li>
+                        <li><a href="resources.html" class="text-gray-300 hover:text-white transition-gentle">Ressources</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white transition-gentle">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Contact Urgence</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            +261 34 12 345 67
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            soins@fimibema.mg
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-4 h-4 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            Antananarivo, Madagascar
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 FI.MI.BEA.MA Care. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Global variables
+        let currentStep = 1;
+        let selectedService = null;
+        let selectedCaregiver = null;
+        let calculatedPrice = 0;
+
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling functions
+        function scrollToBooking() {
+            document.getElementById('booking-system').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+
+        function scrollToCalculator() {
+            document.getElementById('service-calculator').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+
+        // Service selection
+        function selectService(serviceType) {
+            selectedService = serviceType;
+            
+            const serviceNames = {
+                'daily': 'Soins Quotidiens',
+                'nightly': 'Soins Nocturnes', 
+                'companion': 'Services de Compagnie'
+            };
+            
+            const servicePrices = {
+                'daily': '15 000,00 MGA/heure',
+                'nightly': '25 000,00 MGA/nuit',
+                'companion': '12 000,00 MGA/heure'
+            };
+
+            // Update selected service display
+            const selectedServiceDiv = document.getElementById('selectedService');
+            selectedServiceDiv.innerHTML = `
+                <div class="font-semibold text-primary-700">${serviceNames[serviceType]}</div>
+                <div class="text-sm text-primary-600">${servicePrices[serviceType]}</div>
+            `;
+
+            // Auto-select in calculator
+            const radioButton = document.querySelector(`input[name="serviceType"][value="${serviceType}"]`);
+            if (radioButton) {
+                radioButton.checked = true;
+                calculatePrice();
+            }
+
+            // Scroll to calculator
+            setTimeout(() => {
+                scrollToCalculator();
+            }, 300);
+        }
+
+        // Caregiver selection
+        function selectCaregiver(caregiverId) {
+            selectedCaregiver = caregiverId;
+            
+            const caregivers = {
+                'marie': {
+                    name: 'Marie Rasoamanana',
+                    title: 'Aide-soignante certifiée',
+                    experience: '8 ans d\'expérience',
+                    specialty: 'Spécialiste Alzheimer'
+                },
+                'jean': {
+                    name: 'Jean Rakoto',
+                    title: 'Infirmier diplômé',
+                    experience: '12 ans d\'expérience',
+                    specialty: 'Soins palliatifs'
+                },
+                'hanta': {
+                    name: 'Hanta Andrianina',
+                    title: 'Auxiliaire de vie',
+                    experience: '5 ans d\'expérience',
+                    specialty: 'Activités quotidiennes'
+                }
+            };
+
+            if (caregivers[caregiverId]) {
+                const caregiver = caregivers[caregiverId];
+                const selectedCaregiverDiv = document.getElementById('selectedCaregiver');
+                selectedCaregiverDiv.innerHTML = `
+                    <div class="font-semibold text-primary-700">${caregiver.name}</div>
+                    <div class="text-sm text-primary-600">${caregiver.title} - ${caregiver.experience}</div>
+                    <div class="text-xs text-primary-500">${caregiver.specialty}</div>
+                `;
+            }
+
+            // Scroll to booking
+            setTimeout(() => {
+                scrollToBooking();
+            }, 300);
+        }
+
+        // Price calculator
+        function calculatePrice() {
+            const serviceType = document.querySelector('input[name="serviceType"]:checked');
+            const duration = parseInt(document.getElementById('duration').value) || 0;
+            const frequency = parseInt(document.getElementById('frequency').value) || 0;
+            
+            const medication = document.getElementById('medication').checked;
+            const transport = document.getElementById('transport').checked;
+            const housekeeping = document.getElementById('housekeeping').checked;
+
+            if (!serviceType) return;
+
+            const basePrices = {
+                'daily': 15000,
+                'nightly': 25000,
+                'companion': 12000
+            };
+
+            let basePrice = 0;
+            let additionalPrice = 0;
+
+            if (serviceType.value === 'nightly') {
+                basePrice = basePrices[serviceType.value] * frequency;
+            } else {
+                basePrice = basePrices[serviceType.value] * duration * frequency;
+            }
+
+            if (medication) additionalPrice += 2000 * duration * frequency;
+            if (transport) additionalPrice += 5000 * frequency;
+            if (housekeeping) additionalPrice += 3000 * duration * frequency;
+
+            const weeklyTotal = basePrice + additionalPrice;
+            const monthlyTotal = weeklyTotal * 4.33; // Average weeks per month
+
+            // Update display
+            document.getElementById('basePrice').textContent = formatPrice(basePrice);
+            document.getElementById('additionalPrice').textContent = formatPrice(additionalPrice);
+            document.getElementById('weeklyTotal').textContent = formatPrice(weeklyTotal);
+            document.getElementById('monthlyTotal').textContent = formatPrice(monthlyTotal);
+
+            calculatedPrice = weeklyTotal;
+        }
+
+        function formatPrice(amount) {
+            return new Intl.NumberFormat('fr-FR', {
+                style: 'decimal',
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+            }).format(amount) + ' MGA';
+        }
+
+        function proceedToBooking() {
+            scrollToBooking();
+        }
+
+        function viewAllCaregivers() {
+            alert('Fonctionnalité à venir : Voir tous les soignants disponibles');
+        }
+
+        // Booking form navigation
+        function changeStep(direction) {
+            const steps = document.querySelectorAll('.booking-step');
+            const totalSteps = steps.length;
+
+            // Hide current step
+            steps[currentStep - 1].classList.add('hidden');
+            steps[currentStep - 1].classList.remove('active');
+
+            // Update step number
+            currentStep += direction;
+
+            // Show new step
+            if (currentStep >= 1 && currentStep <= totalSteps) {
+                steps[currentStep - 1].classList.remove('hidden');
+                steps[currentStep - 1].classList.add('active');
+            }
+
+            // Update navigation buttons
+            updateNavigationButtons();
+
+            // Update booking summary on last step
+            if (currentStep === 4) {
+                updateBookingSummary();
+            }
+        }
+
+        function updateNavigationButtons() {
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const submitBtn = document.getElementById('submitBtn');
+
+            // Show/hide previous button
+            if (currentStep === 1) {
+                prevBtn.style.display = 'none';
+            } else {
+                prevBtn.style.display = 'block';
+            }
+
+            // Show/hide next/submit buttons
+            if (currentStep === 4) {
+                nextBtn.style.display = 'none';
+                submitBtn.style.display = 'block';
+            } else {
+                nextBtn.style.display = 'block';
+                submitBtn.style.display = 'none';
+            }
+        }
+
+        function updateBookingSummary() {
+            const patientName = document.getElementById('patientName').value;
+            const contactName = document.getElementById('contactName').value;
+            const contactPhone = document.getElementById('contactPhone').value;
+            const startDate = document.getElementById('startDate').value;
+            const preferredTime = document.getElementById('preferredTime').value;
+
+            const timeLabels = {
+                'morning': 'Matin (8h-12h)',
+                'afternoon': 'Après-midi (12h-18h)',
+                'evening': 'Soir (18h-22h)',
+                'night': 'Nuit (22h-8h)'
+            };
+
+            const summaryDiv = document.getElementById('bookingSummary');
+            summaryDiv.innerHTML = `
+                <div><strong>Patient :</strong> ${patientName}</div>
+                <div><strong>Contact :</strong> ${contactName} - ${contactPhone}</div>
+                <div><strong>Service :</strong> ${selectedService ? document.getElementById('selectedService').textContent.trim() : 'Non sélectionné'}</div>
+                <div><strong>Soignant :</strong> ${selectedCaregiver ? document.getElementById('selectedCaregiver').textContent.trim() : 'Non sélectionné'}</div>
+                <div><strong>Date de début :</strong> ${startDate}</div>
+                <div><strong>Heure préférée :</strong> ${preferredTime ? timeLabels[preferredTime] : 'Non spécifiée'}</div>
+                <div><strong>Coût estimé :</strong> ${formatPrice(calculatedPrice)} par semaine</div>
+            `;
+        }
+
+        // Form submission
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simulate booking confirmation
+            alert('Réservation confirmée ! Nous vous contacterons dans les 24 heures pour finaliser les détails.');
+            
+            // Reset form
+            this.reset();
+            currentStep = 1;
+            selectedService = null;
+            selectedCaregiver = null;
+            calculatedPrice = 0;
+            
+            // Reset display
+            const steps = document.querySelectorAll('.booking-step');
+            steps.forEach((step, index) => {
+                if (index === 0) {
+                    step.classList.remove('hidden');
+                    step.classList.add('active');
+                } else {
+                    step.classList.add('hidden');
+                    step.classList.remove('active');
+                }
+            });
+            
+            updateNavigationButtons();
+        });
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            updateNavigationButtons();
+            
+            // Set minimum date to today
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('startDate').setAttribute('min', today);
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('main-navigation');
+            if (window.scrollY > 100) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

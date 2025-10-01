@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../public/favicon.ico">
+    <title>Hébergement Résidentiel - FI.MI.BEA.MA Care</title>
+    <meta name="description" content="Hébergement résidentiel de qualité pour personnes âgées à Madagascar. Logements confortables, soins personnalisés 24h/24 et tarifs transparents." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Ffimibeama7084back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="font-body bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <nav class="bg-white shadow-subtle sticky top-0 z-50" id="main-navigation">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <svg class="h-10 w-auto" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="10" y="15" width="30" height="30" rx="15" fill="#239148"/>
+                            <rect x="20" y="25" width="10" height="10" rx="2" fill="white"/>
+                            <text x="50" y="25" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="#2B4D2A">FI.MI.BEA.MA</text>
+                            <text x="50" y="40" font-family="Source Sans Pro, sans-serif" font-size="12" fill="#546E7A">Care</text>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="homepage.html" class="text-text-secondary hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-gentle">Accueil</a>
+                        <a href="about.html" class="text-text-secondary hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-gentle">À Propos</a>
+                        <a href="residential_care.html" class="text-primary-600 font-semibold px-3 py-2 rounded-md text-sm font-medium">Hébergement</a>
+                        <a href="home_care_services.html" class="text-text-secondary hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-gentle">Soins à Domicile</a>
+                        <a href="resources.html" class="text-text-secondary hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-gentle">Ressources</a>
+                        <a href="pricing.html" class="text-primary block px-3 py-2 rounded-md text-base font-medium">Tarifs</a>
+                        <a href="contact.html" class="bg-primary-600 text-white px-4 py-2 rounded-button text-sm font-medium hover:bg-primary-700 transition-gentle">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-text-secondary hover:text-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-600 p-2" id="mobile-menu-button">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-border">
+                <a href="homepage.html" class="text-text-secondary hover:text-primary-600 block px-3 py-2 rounded-md text-base font-medium">Accueil</a>
+                <a href="about.html" class="text-text-secondary hover:text-primary-600 block px-3 py-2 rounded-md text-base font-medium">À Propos</a>
+                <a href="residential_care.html" class="text-primary-600 block px-3 py-2 rounded-md text-base font-medium">Hébergement</a>
+                <a href="home_care_services.html" class="text-text-secondary hover:text-primary-600 block px-3 py-2 rounded-md text-base font-medium">Soins à Domicile</a>
+                <a href="resources.html" class="text-text-secondary hover:text-primary-600 block px-3 py-2 rounded-md text-base font-medium">Ressources</a>
+                <a href="contact.html" class="bg-primary-600 text-white block px-3 py-2 rounded-button text-base font-medium mx-3 mt-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-50 to-white overflow-hidden" id="hero-section">
+        <div class="absolute inset-0 bg-white opacity-50"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Hero Content -->
+                <div class="text-center lg:text-left">
+                    <h1 class="font-headline text-4xl lg:text-6xl font-bold text-text-primary mb-6 leading-tight">
+                        Hébergement 
+                        <span class="text-primary-600">Résidentiel</span>
+                    </h1>
+                    <p class="text-xl text-text-secondary mb-8 leading-relaxed">
+                        Un environnement chaleureux et sécurisé où vos proches bénéficient de soins personnalisés 24h/24 dans le respect de leur dignité et autonomie.
+                    </p>
+                    
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+                        <button onclick="startVirtualTour()" class="bg-primary-600 text-white px-8 py-4 rounded-button font-semibold hover:bg-primary-700 transition-gentle shadow-card hover:shadow-card-hover">
+                            Visite Virtuelle 360°
+                        </button>
+                        <button onclick="openPricingCalculator()" class="border-2 border-primary-600 text-primary-600 px-8 py-4 rounded-button font-semibold hover:bg-primary-600 hover:text-white transition-gentle">
+                            Calculer les Tarifs
+                        </button>
+                    </div>
+
+                    <!-- Trust Indicators -->
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-6 text-sm text-text-secondary">
+                        <div class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Certifié Ministère Santé</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Personnel Qualifié 24h/24</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Tarifs Transparents</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="relative">
+                    <div class="aspect-w-4 aspect-h-3 rounded-card overflow-hidden shadow-card">
+                        <img src="../public/ito ara oe.jpg" alt="Chambre confortable dans notre résidence" class="w-full h-96 object-cover" loading="lazy" />
+                    </div>
+                    
+                    <!-- Floating Stats Card -->
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-card shadow-card">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary-600">98%</div>
+                            <div class="text-sm text-text-secondary">Satisfaction Familles</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accommodation Categories -->
+    <section class="py-16 bg-white" id="accommodation-categories">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-headline text-3xl lg:text-4xl font-bold text-text-primary mb-4">
+                    Nos Catégories d'Hébergement
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Choisissez l'hébergement qui correspond aux besoins et au budget de votre proche avec nos options flexibles et transparentes.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Standard Room -->
+                <div class="bg-white rounded-card shadow-card hover:shadow-card-hover transition-gentle p-8 relative">
+                    <div class="absolute top-4 right-4">
+                        <span class="bg-primary-100 text-primary-600 px-3 py-1 rounded-full text-sm font-semibold">Populaire</span>
+                    </div>
+                    <div class="mb-6">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2958&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Chambre Standard" class="w-full h-48 object-cover rounded-card mb-4" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/11/18/17/20/living-room-1835923_1280.jpg'; this.onerror=null;" />
+                    </div>
+                    <h3 class="font-headline text-2xl font-semibold text-text-primary mb-4">Chambre Standard</h3>
+                    <div class="text-3xl font-bold text-primary-600 mb-4">
+                        450 000 <span class="text-lg font-normal text-text-secondary">MGA/mois</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-text-secondary">
+                            <svg class="w-5 h-5 text-primary-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Chambre individuelle 20m²
+                        </li>
+                        <li class="flex items-center text-text-secondary">
+                            <svg class="w-5 h-5 text-primary-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Salle de bain privée
+                        </li>
+                        <li class="flex items-center text-text-secondary">
+                            <svg class="w-5 h-5 text-primary-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            3 repas équilibrés/jour
+                        </li>
+                        <li class="flex items-center text-text-secondary">
+                            <svg class="w-5 h-5 text-primary-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Soins de base inclus
+                        </li>
+                        <li class="flex items-center text-text-secondary">
+                            <svg class="w-5 h-5 text-primary-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Activités communautaires
+                        </li>
+                    </ul>
+                    <button onclick="selectAccommodation('standard')" class="w-full bg-primary-600 text-white py-3 rounded-button font-semibold hover:bg-primary-700 transition-gentle">
+                        Choisir cette Option
+                    </button>
+                </div>
+
+                <!-- Premium Room -->
+                <div class="bg-white rounded-card shadow-card hover:shadow-card-hover transition-gentle p-8 relative border-2 border-primary-600">
+                    <div class="absolute top-4 right-4">
+                        <span class="bg-yellow-100 text-yellow-600 px-3 py-1 rounded-full text-sm font-semibold">Recommandé</span>
+                    </div>
+                    <div class="mb-6">
+                        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Chambre Premium" class="w-full h-48 object-cover rounded-card mb-4" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/11/30/08/46/living-room-1872192_1280.jpg'; this.onerror=null;" />
+                    </div>
+                    <h3 class="font-headline text-2xl font-semibold text-text-primary mb-4">Chambre Premium</h3>
+                    <div class="text-3xl font-bold text-primary-600 mb-4">
+                        650 000 <span class="text-lg font-normal text-text-secondary">MGA/mois</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-text-secondary">
+                            <svg class="w-5 h-5 text-primary-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Chambre spacieuse 30m²
+                        </li>
+                        <li class="flex items-center text-text-secondary">
+                            <svg class="w-5 h-5 text-primary-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Balcon privé avec vue jardin
+                        </li>
+                        <li class="flex items-center text-text-secondary">
+                            <svg class="w-5 h-5 text-primary-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Kitchenette équipée
+                        </li>
+                        <li class="flex items-center text-text-secondary">
+                            <svg class="w-5 h-5 text-primary-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Soins personnalisés avancés
+                        </li>
+                        <li class="flex items-center text-text-secondary">
+                            <svg class="w-5 h-5 text-primary-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Service de conciergerie
+                        </li>
+                    </ul>
+                    <button onclick="selectAccommodation('premium')" class="w-full bg-primary-600 text-white py-3 rounded-button font-semibold hover:bg-primary-700 transition-gentle">
+                        Choisir cette Option
+                    </button>
+                </div>
+
+                <!-- Luxury Suite -->
+                <div class="bg-white rounded-card shadow-card hover:shadow-card-hover transition-gentle p-8 relative">
+                    <div class="absolute top-4 right-4">
+                        <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm font-semibold">Luxe</span>
+                    </div>
+                    <div class="mb-6">
+                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Suite Luxe" class="w-full h-48 object-cover rounded-card mb-4" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2017/03/28/12/10/chairs-2181947_1280.jpg'; this.onerror=null;" />
+                    </div>
+                    <h3 class="font-headline text-2xl font-semibold text-text-primary mb-4">Suite Luxe</h3>
+                    <div class="text-3xl font-bold text-primary-600 mb-4">
+                        950 000 <span class="text-lg font-normal text-text-secondary">MGA/mois</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-text-secondary">
+                            <svg class="w-5 h-5 text-primary-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Suite 2 pièces 45m²
+                        </li>
+                        <li class="flex items-center text-text-secondary">
+                            <svg class="w-5 h-5 text-primary-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Salon privé et terrasse
+                        </li>
+                        <li class="flex items-center text-text-secondary">
+                            <svg class="w-5 h-5 text-primary-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Cuisine complète équipée
+                        </li>
+                        <li class="flex items-center text-text-secondary">
+                            <svg class="w-5 h-5 text-primary-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Soins premium 24h/24
+                        </li>
+                        <li class="flex items-center text-text-secondary">
+                            <svg class="w-5 h-5 text-primary-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Service personnalisé dédié
+                        </li>
+                    </ul>
+                    <button onclick="selectAccommodation('luxury')" class="w-full bg-primary-600 text-white py-3 rounded-button font-semibold hover:bg-primary-700 transition-gentle">
+                        Choisir cette Option
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtual Tour Section -->
+    <section class="py-16 bg-primary-50" id="virtual-tour">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-headline text-3xl lg:text-4xl font-bold text-text-primary mb-4">
+                    Visite Virtuelle 360°
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Explorez nos installations depuis chez vous grâce à notre visite virtuelle interactive et découvrez l'environnement chaleureux de notre résidence.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-card shadow-card overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <!-- Virtual Tour Viewer -->
+                    <div class="relative h-96 lg:h-auto">
+                        <div id="tour-viewer" class="w-full h-full bg-gray-100 flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="w-20 h-20 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <svg class="w-10 h-10 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="font-semibold text-lg text-text-primary mb-2">Visite Virtuelle Interactive</h3>
+                                <p class="text-text-secondary mb-4">Cliquez sur "Démarrer" pour explorer nos espaces</p>
+                                <button onclick="startVirtualTour()" class="bg-primary-600 text-white px-6 py-3 rounded-button font-semibold hover:bg-primary-700 transition-gentle">
+                                    Démarrer la Visite
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tour Navigation -->
+                    <div class="p-8">
+                        <h3 class="font-headline text-2xl font-semibold text-text-primary mb-6">Espaces à Découvrir</h3>
+                        <div class="space-y-4">
+                            <button onclick="navigateToRoom('entrance')" class="tour-nav-btn w-full text-left p-4 rounded-button border-2 border-border hover:border-primary-600 hover:bg-primary-50 transition-gentle">
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4">
+                                        <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-text-primary">Hall d'Accueil</div>
+                                        <div class="text-sm text-text-secondary">Espace d'accueil chaleureux</div>
+                                    </div>
+                                </div>
+                            </button>
+
+                            <button onclick="navigateToRoom('room')" class="tour-nav-btn w-full text-left p-4 rounded-button border-2 border-border hover:border-primary-600 hover:bg-primary-50 transition-gentle">
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4">
+                                        <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10v11M20 10v11"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-text-primary">Chambres Résidentielles</div>
+                                        <div class="text-sm text-text-secondary">Espaces de vie confortables</div>
+                                    </div>
+                                </div>
+                            </button>
+
+                            <button onclick="navigateToRoom('common')" class="tour-nav-btn w-full text-left p-4 rounded-button border-2 border-border hover:border-primary-600 hover:bg-primary-50 transition-gentle">
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4">
+                                        <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-text-primary">Espaces Communs</div>
+                                        <div class="text-sm text-text-secondary">Salon, salle à manger, bibliothèque</div>
+                                    </div>
+                                </div>
+                            </button>
+
+                            <button onclick="navigateToRoom('garden')" class="tour-nav-btn w-full text-left p-4 rounded-button border-2 border-border hover:border-primary-600 hover:bg-primary-50 transition-gentle">
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4">
+                                        <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-text-primary">Jardin Thérapeutique</div>
+                                        <div class="text-sm text-text-secondary">Espaces verts et détente</div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Calculator -->
+    <section class="py-16 bg-white" id="pricing-calculator">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-headline text-3xl lg:text-4xl font-bold text-text-primary mb-4">
+                    Calculateur de Tarifs Transparent
+                </h2>
+                <p class="text-xl text-text-secondary">
+                    Obtenez une estimation précise et personnalisée des coûts d'hébergement selon vos besoins spécifiques.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-card shadow-card p-8">
+                <div id="pricing-form">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <!-- Accommodation Type -->
+                        <div>
+                            <label class="block text-sm font-semibold text-text-primary mb-3">Type d'Hébergement</label>
+                            <select id="accommodation-type" class="w-full p-3 border border-border rounded-button focus:border-primary-600 focus:outline-none transition-gentle">
+                                <option value="standard">Chambre Standard - 450 000 MGA</option>
+                                <option value="premium">Chambre Premium - 650 000 MGA</option>
+                                <option value="luxury">Suite Luxe - 950 000 MGA</option>
+                            </select>
+                        </div>
+
+                        <!-- Care Level -->
+                        <div>
+                            <label class="block text-sm font-semibold text-text-primary mb-3">Niveau de Soins</label>
+                            <select id="care-level" class="w-full p-3 border border-border rounded-button focus:border-primary-600 focus:outline-none transition-gentle">
+                                <option value="basic">Soins de Base - Inclus</option>
+                                <option value="intermediate">Soins Intermédiaires - +150 000 MGA</option>
+                                <option value="intensive">Soins Intensifs - +300 000 MGA</option>
+                            </select>
+                        </div>
+
+                        <!-- Duration -->
+                        <div>
+                            <label class="block text-sm font-semibold text-text-primary mb-3">Durée du Séjour</label>
+                            <select id="duration" class="w-full p-3 border border-border rounded-button focus:border-primary-600 focus:outline-none transition-gentle">
+                                <option value="1">1 mois</option>
+                                <option value="3">3 mois (-5%)</option>
+                                <option value="6">6 mois (-10%)</option>
+                                <option value="12">12 mois (-15%)</option>
+                            </select>
+                        </div>
+
+                        <!-- Additional Services -->
+                        <div>
+                            <label class="block text-sm font-semibold text-text-primary mb-3">Services Additionnels</label>
+                            <div class="space-y-2">
+                                <label class="flex items-center">
+                                    <input type="checkbox" id="physiotherapy" class="mr-2 text-primary-600 focus:ring-primary-600" />
+                                    <span class="text-sm">Kinésithérapie (+50 000 MGA/mois)</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" id="transport" class="mr-2 text-primary-600 focus:ring-primary-600" />
+                                    <span class="text-sm">Transport médical (+30 000 MGA/mois)</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" id="laundry" class="mr-2 text-primary-600 focus:ring-primary-600" />
+                                    <span class="text-sm">Blanchisserie premium (+25 000 MGA/mois)</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button onclick="calculatePricing()" class="w-full bg-primary-600 text-white py-4 rounded-button font-semibold hover:bg-primary-700 transition-gentle mb-6">
+                        Calculer le Tarif
+                    </button>
+
+                    <!-- Results -->
+                    <div id="pricing-results" class="hidden">
+                        <div class="bg-primary-50 rounded-card p-6">
+                            <h3 class="font-headline text-xl font-semibold text-text-primary mb-4">Estimation Personnalisée</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <div class="text-sm text-text-secondary mb-1">Coût Mensuel</div>
+                                    <div id="monthly-cost" class="text-2xl font-bold text-primary-600">0 MGA</div>
+                                </div>
+                                <div>
+                                    <div class="text-sm text-text-secondary mb-1">Coût Total</div>
+                                    <div id="total-cost" class="text-2xl font-bold text-text-primary">0 MGA</div>
+                                </div>
+                            </div>
+                            <div class="mt-6 p-4 bg-white rounded-button">
+                                <h4 class="font-semibold text-text-primary mb-2">Détail des Services Inclus:</h4>
+                                <ul id="included-services" class="text-sm text-text-secondary space-y-1">
+                                    <!-- Services will be populated by JavaScript -->
+                                </ul>
+                            </div>
+                            <div class="flex flex-col sm:flex-row gap-4 mt-6">
+                                <a href="contact.html" class="bg-primary-600 text-white px-6 py-3 rounded-button font-semibold hover:bg-primary-700 transition-gentle text-center">
+                                    Réserver une Consultation
+                                </a>
+                                <button onclick="downloadEstimate()" class="border-2 border-primary-600 text-primary-600 px-6 py-3 rounded-button font-semibold hover:bg-primary-600 hover:text-white transition-gentle">
+                                    Télécharger l'Estimation
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Care Team Section -->
+    <section class="py-16 bg-gray-50" id="care-team">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-headline text-3xl lg:text-4xl font-bold text-text-primary mb-4">
+                    Notre Équipe de Soins
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Des professionnels qualifiés et dévoués qui veillent sur le bien-être de vos proches avec expertise et compassion.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Team Member 1 -->
+                <div class="bg-white rounded-card shadow-card p-6 text-center">
+                    <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Dr. Marie Razafy" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                    </div>
+                    <h3 class="font-headline text-xl font-semibold text-text-primary mb-2">Dr. Marie Razafy</h3>
+                    <p class="text-primary-600 font-semibold mb-3">Directrice Médicale</p>
+                    <p class="text-text-secondary text-sm mb-4">
+                        15 ans d'expérience en gériatrie, spécialisée dans les soins aux personnes âgées et la médecine préventive.
+                    </p>
+                    <div class="flex justify-center space-x-2">
+                        <span class="bg-primary-100 text-primary-600 px-2 py-1 rounded-full text-xs">Gériatrie</span>
+                        <span class="bg-primary-100 text-primary-600 px-2 py-1 rounded-full text-xs">Médecine Préventive</span>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="bg-white rounded-card shadow-card p-6 text-center">
+                    <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Hery Andriamana" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2017/08/01/01/33/beanie-2562646_1280.jpg'; this.onerror=null;" />
+                    </div>
+                    <h3 class="font-headline text-xl font-semibold text-text-primary mb-2">Hery Andriamana</h3>
+                    <p class="text-primary-600 font-semibold mb-3">Infirmier Chef</p>
+                    <p class="text-text-secondary text-sm mb-4">
+                        Diplômé AVS/AVE, coordonne les soins quotidiens et supervise l'équipe d'aide-soignants avec bienveillance.
+                    </p>
+                    <div class="flex justify-center space-x-2">
+                        <span class="bg-primary-100 text-primary-600 px-2 py-1 rounded-full text-xs">AVS/AVE</span>
+                        <span class="bg-primary-100 text-primary-600 px-2 py-1 rounded-full text-xs">Coordination</span>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="bg-white rounded-card shadow-card p-6 text-center">
+                    <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1594824388853-c0c0b8e5e8b5?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Naina Rakoto" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2017/03/01/22/18/avatar-2109804_1280.png'; this.onerror=null;" />
+                    </div>
+                    <h3 class="font-headline text-xl font-semibold text-text-primary mb-2">Naina Rakoto</h3>
+                    <p class="text-primary-600 font-semibold mb-3">Kinésithérapeute</p>
+                    <p class="text-text-secondary text-sm mb-4">
+                        Spécialisée en rééducation gériatrique, elle accompagne nos résidents dans le maintien de leur mobilité.
+                    </p>
+                    <div class="flex justify-center space-x-2">
+                        <span class="bg-primary-100 text-primary-600 px-2 py-1 rounded-full text-xs">Kinésithérapie</span>
+                        <span class="bg-primary-100 text-primary-600 px-2 py-1 rounded-full text-xs">Rééducation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resident Testimonials -->
+    <section class="py-16 bg-white" id="resident-testimonials">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-headline text-3xl lg:text-4xl font-bold text-text-primary mb-4">
+                    Témoignages de Nos Résidents et Familles
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Découvrez les expériences authentiques de ceux qui nous font confiance pour leurs soins quotidiens.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Video Testimonial 1 -->
+                <div class="bg-white rounded-card shadow-card overflow-hidden">
+                    <div class="relative h-64 bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Témoignage vidéo de Marie Rakoto" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                            <button onclick="playTestimonial('marie')" class="w-16 h-16 bg-white bg-opacity-90 rounded-full flex items-center justify-center hover:bg-opacity-100 transition-gentle">
+                                <svg class="w-6 h-6 text-primary-600 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-headline text-lg font-semibold text-text-primary mb-2">Marie Rakoto</h3>
+                        <p class="text-primary-600 text-sm font-semibold mb-3">Fille de résidente - Chambre Premium</p>
+                        <p class="text-text-secondary text-sm leading-relaxed">
+                            "Ma mère est ici depuis 8 mois et je vois à quel point elle s'épanouit. L'équipe est exceptionnelle et les soins sont personnalisés. Je recommande vivement FI.MI.BEA.MA Care."
+                        </p>
+                        <div class="flex text-yellow-400 mt-4">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Testimonial 2 -->
+                <div class="bg-white rounded-card shadow-card overflow-hidden">
+                    <div class="relative h-64 bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Témoignage vidéo de Jean Andriamana" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                            <button onclick="playTestimonial('jean')" class="w-16 h-16 bg-white bg-opacity-90 rounded-full flex items-center justify-center hover:bg-opacity-100 transition-gentle">
+                                <svg class="w-6 h-6 text-primary-600 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-headline text-lg font-semibold text-text-primary mb-2">Jean Andriamana</h3>
+                        <p class="text-primary-600 text-sm font-semibold mb-3">Fils de résident - Suite Luxe</p>
+                        <p class="text-text-secondary text-sm leading-relaxed">
+                            "Mon père a 82 ans et vit dans la suite luxe depuis 6 mois. Il participe aux activités, a retrouvé le sourire et nous sommes rassurés par la qualité des soins prodigués."
+                        </p>
+                        <div class="flex text-yellow-400 mt-4">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Life & Activities -->
+    <section class="py-16 bg-primary-50" id="daily-life">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-headline text-3xl lg:text-4xl font-bold text-text-primary mb-4">
+                    Vie Quotidienne et Activités
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Un programme d'activités riche et varié pour maintenir l'autonomie, stimuler les capacités et favoriser les liens sociaux.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Activity Calendar -->
+                <div class="bg-white rounded-card shadow-card p-8">
+                    <h3 class="font-headline text-2xl font-semibold text-text-primary mb-6">Programme de la Semaine</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center p-4 bg-primary-50 rounded-button">
+                            <div class="w-12 h-12 bg-primary-600 text-white rounded-full flex items-center justify-center mr-4 font-semibold">
+                                L
+                            </div>
+                            <div>
+                                <div class="font-semibold text-text-primary">Gymnastique Douce</div>
+                                <div class="text-sm text-text-secondary">9h00 - 10h00 • Salle de kinésithérapie</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center p-4 bg-gray-50 rounded-button">
+                            <div class="w-12 h-12 bg-primary-600 text-white rounded-full flex items-center justify-center mr-4 font-semibold">
+                                M
+                            </div>
+                            <div>
+                                <div class="font-semibold text-text-primary">Atelier Mémoire</div>
+                                <div class="text-sm text-text-secondary">14h30 - 15h30 • Salon principal</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <a href="resources.html" class="inline-flex items-center text-primary-600 font-semibold hover:text-primary-700 transition-gentle">
+                            Voir le programme complet
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Daily Life Images -->
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Activités de groupe" class="w-full h-48 object-cover rounded-card shadow-card" loading="lazy" onerror="this.src='https://images.pexels.com/photos/7551667/pexels-photo-7551667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Jardin thérapeutique" class="w-full h-32 object-cover rounded-card shadow-card" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/11/29/05/45/adult-1867743_1280.jpg'; this.onerror=null;" />
+                    </div>
+                    <div class="space-y-4 mt-8">
+                        <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Repas convivial" class="w-full h-32 object-cover rounded-card shadow-card" loading="lazy" onerror="this.src='https://images.pexels.com/photos/3768131/pexels-photo-3768131.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Soins personnalisés" class="w-full h-48 object-cover rounded-card shadow-card" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2017/05/25/21/33/workplace-2343924_1280.jpg'; this.onerror=null;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking & Consultation CTA -->
+    <section class="py-16 bg-primary-600" id="booking-cta">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center text-white">
+                <h2 class="font-headline text-3xl lg:text-4xl font-bold mb-4">
+                    Prêt à Découvrir Notre Résidence ?
+                </h2>
+                <p class="text-xl text-primary-100 mb-8 max-w-3xl mx-auto">
+                    Planifiez une visite personnalisée ou une consultation gratuite pour discuter des besoins spécifiques de votre proche.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                    <!-- Visit Booking -->
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold text-lg mb-2">Visite Guidée</h3>
+                        <p class="text-primary-100 text-sm">Découvrez nos installations avec un guide expert</p>
+                    </div>
+
+                    <!-- Consultation -->
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold text-lg mb-2">Consultation Gratuite</h3>
+                        <p class="text-primary-100 text-sm">Évaluation personnalisée des besoins</p>
+                    </div>
+
+                    <!-- Assessment -->
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold text-lg mb-2">Évaluation Médicale</h3>
+                        <p class="text-primary-100 text-sm">Bilan de santé complet par nos experts</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html" class="bg-white text-primary-600 px-8 py-4 rounded-button font-semibold hover:bg-gray-100 transition-gentle">
+                        Réserver une Visite
+                    </a>
+                    <button onclick="openPricingCalculator()" class="border-2 border-white text-white px-8 py-4 rounded-button font-semibold hover:bg-white hover:text-primary-600 transition-gentle">
+                        Calculer les Tarifs
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white" id="footer">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <svg class="h-8 w-auto mr-3" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="10" y="15" width="30" height="30" rx="15" fill="#239148"/>
+                            <rect x="20" y="25" width="10" height="10" rx="2" fill="white"/>
+                            <text x="50" y="25" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="white">FI.MI.BEA.MA</text>
+                            <text x="50" y="40" font-family="Source Sans Pro, sans-serif" font-size="12" fill="#9CA3AF">Care</text>
+                        </svg>
+                    </div>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Hébergement résidentiel de qualité pour personnes âgées avec soins personnalisés 24h/24 dans un environnement chaleureux et sécurisé.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-gentle">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-gentle">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-gentle">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Liens Rapides</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-300 hover:text-white transition-gentle">À Propos</a></li>
+                        <li><a href="residential_care.html" class="text-gray-300 hover:text-white transition-gentle">Hébergement</a></li>
+                        <li><a href="home_care_services.html" class="text-gray-300 hover:text-white transition-gentle">Soins à Domicile</a></li>
+                        <li><a href="resources.html" class="text-gray-300 hover:text-white transition-gentle">Ressources</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white transition-gentle">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Contact</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            +261 34 12 345 67
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            info@fimibema.mg
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-4 h-4 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            Antananarivo, Madagascar
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 FI.MI.BEA.MA Care. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Virtual Tour Functions
+        function startVirtualTour() {
+            const tourViewer = document.getElementById('tour-viewer');
+            tourViewer.innerHTML = `
+                <div class="w-full h-full bg-gradient-to-br from-primary-100 to-primary-200 flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold text-lg text-text-primary mb-2">Visite en cours...</h3>
+                        <p class="text-text-secondary">Chargement de la visite 360°</p>
+                    </div>
+                </div>
+            `;
+            
+            // Simulate tour loading
+            setTimeout(() => {
+                tourViewer.innerHTML = `
+                    <div class="w-full h-full bg-gray-800 flex items-center justify-center relative">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2958&auto=format&fit=crop&ixlib=rb-4.0.3" 
+                             alt="Vue 360° Hall d'accueil" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-sm">
+                            Hall d'Accueil - Vue 360°
+                        </div>
+                        <div class="absolute bottom-4 right-4 flex space-x-2">
+                            <button onclick="navigateToRoom('room')" class="bg-primary-600 text-white px-3 py-1 rounded-button text-sm hover:bg-primary-700 transition-gentle">
+                                Chambres
+                            </button>
+                            <button onclick="navigateToRoom('common')" class="bg-primary-600 text-white px-3 py-1 rounded-button text-sm hover:bg-primary-700 transition-gentle">
+                                Espaces Communs
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }, 2000);
+        }
+
+        function navigateToRoom(roomType) {
+            const tourViewer = document.getElementById('tour-viewer');
+            const roomImages = {
+                'entrance': 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2958&auto=format&fit=crop&ixlib=rb-4.0.3',
+                'room': 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3',
+                'common': 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3',
+                'garden': 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3'
+            };
+            
+            const roomNames = {
+                'entrance': 'Hall d\'Accueil',
+                'room': 'Chambre Premium',
+                'common': 'Salon Principal',
+                'garden': 'Jardin Thérapeutique'
+            };
+
+            tourViewer.innerHTML = `
+                <div class="w-full h-full bg-gray-800 flex items-center justify-center relative">
+                    <img src="${roomImages[roomType]}" 
+                         alt="Vue 360° ${roomNames[roomType]}" 
+                         class="w-full h-full object-cover">
+                    <div class="absolute top-4 left-4 bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-sm">
+                        ${roomNames[roomType]} - Vue 360°
+                    </div>
+                    <div class="absolute bottom-4 right-4 flex space-x-2">
+                        <button onclick="startVirtualTour()" class="bg-primary-600 text-white px-3 py-1 rounded-button text-sm hover:bg-primary-700 transition-gentle">
+                            Retour Accueil
+                        </button>
+                    </div>
+                </div>
+            `;
+
+            // Update navigation buttons
+            document.querySelectorAll('.tour-nav-btn').forEach(btn => {
+                btn.classList.remove('border-primary-600', 'bg-primary-50');
+                btn.classList.add('border-border');
+            });
+        }
+
+        // Accommodation Selection
+        function selectAccommodation(type) {
+            const accommodationTypes = {
+                'standard': 'Chambre Standard',
+                'premium': 'Chambre Premium', 
+                'luxury': 'Suite Luxe'
+            };
+            
+            alert(`Vous avez sélectionné: ${accommodationTypes[type]}. Redirection vers le formulaire de contact...`);
+            window.location.href = 'contact.html';
+        }
+
+        // Pricing Calculator Functions
+        function openPricingCalculator() {
+            document.getElementById('pricing-calculator').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function calculatePricing() {
+            const accommodationType = document.getElementById('accommodation-type').value;
+            const careLevel = document.getElementById('care-level').value;
+            const duration = parseInt(document.getElementById('duration').value);
+            
+            // Base prices
+            const basePrices = {
+                'standard': 450000,
+                'premium': 650000,
+                'luxury': 950000
+            };
+            
+            const careAddons = {
+                'basic': 0,
+                'intermediate': 150000,
+                'intensive': 300000
+            };
+            
+            // Calculate base monthly cost
+            let monthlyCost = basePrices[accommodationType] + careAddons[careLevel];
+            
+            // Add optional services
+            if (document.getElementById('physiotherapy').checked) {
+                monthlyCost += 50000;
+            }
+            if (document.getElementById('transport').checked) {
+                monthlyCost += 30000;
+            }
+            if (document.getElementById('laundry').checked) {
+                monthlyCost += 25000;
+            }
+            
+            // Apply duration discounts
+            let discount = 0;
+            if (duration >= 12) discount = 0.15;
+            else if (duration >= 6) discount = 0.10;
+            else if (duration >= 3) discount = 0.05;
+            
+            const discountedMonthlyCost = monthlyCost * (1 - discount);
+            const totalCost = discountedMonthlyCost * duration;
+            
+            // Display results
+            document.getElementById('monthly-cost').textContent = 
+                new Intl.NumberFormat('fr-FR').format(discountedMonthlyCost) + ' MGA';
+            document.getElementById('total-cost').textContent = 
+                new Intl.NumberFormat('fr-FR').format(totalCost) + ' MGA';
+            
+            // Update included services
+            const servicesList = document.getElementById('included-services');
+            const accommodationNames = {
+                'standard': 'Chambre individuelle 20m², salle de bain privée',
+                'premium': 'Chambre spacieuse 30m², balcon privé, kitchenette',
+                'luxury': 'Suite 2 pièces 45m², salon privé, cuisine complète'
+            };
+            
+            const careNames = {
+                'basic': 'Soins de base, surveillance quotidienne',
+                'intermediate': 'Soins intermédiaires, suivi médical renforcé',
+                'intensive': 'Soins intensifs 24h/24, équipe médicale dédiée'
+            };
+            
+            let servicesHtml = `
+                <li>• ${accommodationNames[accommodationType]}</li>
+                <li>• ${careNames[careLevel]}</li>
+                <li>• 3 repas équilibrés par jour</li>
+                <li>• Activités communautaires et thérapeutiques</li>
+                <li>• Blanchisserie standard</li>
+            `;
+            
+            if (document.getElementById('physiotherapy').checked) {
+                servicesHtml += '<li>• Séances de kinésithérapie</li>';
+            }
+            if (document.getElementById('transport').checked) {
+                servicesHtml += '<li>• Transport médical</li>';
+            }
+            if (document.getElementById('laundry').checked) {
+                servicesHtml += '<li>• Blanchisserie premium</li>';
+            }
+            
+            if (discount > 0) {
+                servicesHtml += `<li>• Remise de ${(discount * 100)}% pour séjour longue durée</li>`;
+            }
+            
+            servicesList.innerHTML = servicesHtml;
+            
+            // Show results
+            document.getElementById('pricing-results').classList.remove('hidden');
+        }
+
+        function downloadEstimate() {
+            alert('Téléchargement de l\'estimation en cours... (Fonctionnalité à implémenter)');
+        }
+
+        // Testimonial Functions
+        function playTestimonial(person) {
+            const testimonials = {
+                'marie': 'Lecture du témoignage de Marie Rakoto...',
+                'jean': 'Lecture du témoignage de Jean Andriamana...'
+            };
+            
+            alert(testimonials[person] + ' (Fonctionnalité vidéo à implémenter)');
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('main-navigation');
+            if (window.scrollY > 100) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+
+        // Initialize pricing calculator on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set default values
+            document.getElementById('accommodation-type').value = 'premium';
+            document.getElementById('care-level').value = 'basic';
+            document.getElementById('duration').value = '6';
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

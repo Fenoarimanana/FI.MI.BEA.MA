@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../public/favicon.ico">
+    <title>Contact - FI.MI.BEA.MA Care</title>
+    <meta name="description" content="Contactez FI.MI.BEA.MA Care pour vos besoins de soins aux personnes âgées. Consultation gratuite, urgences 24h/24, et équipe professionnelle à votre service." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Ffimibeama7084back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="font-body bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <nav class="bg-white shadow-subtle sticky top-0 z-50" id="main-navigation">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <svg class="h-10 w-auto" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="10" y="15" width="30" height="30" rx="15" fill="#239148"/>
+                            <rect x="20" y="25" width="10" height="10" rx="2" fill="white"/>
+                            <text x="50" y="25" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="#2B4D2A">FI.MI.BEA.MA</text>
+                            <text x="50" y="40" font-family="Source Sans Pro, sans-serif" font-size="12" fill="#546E7A">Care</text>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="homepage.html" class="text-text-secondary hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-gentle">Accueil</a>
+                        <a href="about.html" class="text-text-secondary hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-gentle">À Propos</a>
+                        <a href="residential_care.html" class="text-text-secondary hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-gentle">Hébergement</a>
+                        <a href="home_care_services.html" class="text-text-secondary hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-gentle">Soins à Domicile</a>
+                        <a href="resources.html" class="text-text-secondary hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-gentle">Ressources</a>
+                        <a href="pricing.html" class="text-primary block px-3 py-2 rounded-md text-base font-medium">Tarifs</a>
+                        <a href="contact.html" class="text-primary-600 font-semibold px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-text-secondary hover:text-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-600 p-2" id="mobile-menu-button">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-border">
+                <a href="homepage.html" class="text-text-secondary hover:text-primary-600 block px-3 py-2 rounded-md text-base font-medium">Accueil</a>
+                <a href="about.html" class="text-text-secondary hover:text-primary-600 block px-3 py-2 rounded-md text-base font-medium">À Propos</a>
+                <a href="residential_care.html" class="text-text-secondary hover:text-primary-600 block px-3 py-2 rounded-md text-base font-medium">Hébergement</a>
+                <a href="home_care_services.html" class="text-text-secondary hover:text-primary-600 block px-3 py-2 rounded-md text-base font-medium">Soins à Domicile</a>
+                <a href="resources.html" class="text-text-secondary hover:text-primary-600 block px-3 py-2 rounded-md text-base font-medium">Ressources</a>
+                <a href="contact.html" class="text-primary-600 block px-3 py-2 rounded-md text-base font-medium font-semibold">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-50 to-white overflow-hidden" id="hero-section">
+        <div class="absolute inset-0 bg-white opacity-50"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
+            <div class="text-center">
+                <h1 class="font-headline text-4xl lg:text-5xl font-bold text-text-primary mb-6 leading-tight">
+                    Contactez-Nous
+                </h1>
+                <p class="text-xl text-text-secondary mb-8 max-w-3xl mx-auto leading-relaxed">
+                    Notre équipe est disponible 24h/24 pour répondre à vos questions et vous accompagner dans vos démarches de soins.
+                </p>
+                
+                <!-- Emergency Contact Banner -->
+                <div class="bg-primary-600 text-white rounded-card p-6 max-w-2xl mx-auto mb-8">
+                    <div class="flex items-center justify-center mb-2">
+                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        </svg>
+                        <span class="font-semibold text-lg">Urgences 24h/24</span>
+                    </div>
+                    <p class="text-2xl font-bold mb-1">+261 34 17 196 77</p>
+                    <p class="text-2xl font-bold mb-1">+261 32 17 969 57</p>
+                    <p class="text-primary-100 text-sm">Disponible en permanence pour les situations d'urgence</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Methods Section -->
+    <section class="py-16 bg-white" id="contact-methods">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-headline text-3xl lg:text-4xl font-bold text-text-primary mb-4">
+                    Plusieurs Façons de Nous Contacter
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Choisissez le moyen de communication qui vous convient le mieux pour obtenir l'aide dont vous avez besoin.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Phone Contact -->
+                <div class="text-center bg-white rounded-card shadow-card hover:shadow-card-hover transition-gentle p-6">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-headline text-lg font-semibold text-text-primary mb-2">Téléphone</h3>
+                    <p class="text-text-secondary mb-3">Appelez-nous directement</p>
+                    <p class="font-semibold text-primary-600 mb-1">+261 34 17 196 77</p>
+                    <p class="font-semibold text-primary-600 mb-1">+261 32 17 969 57</p>
+                    <p class="text-sm text-text-secondary">Lun-Ven: 8h-16h30</p>
+                    <p class="text-sm text-text-secondary">Sam: 8h-16h30</p>
+                </div>
+
+                <!-- Email Contact -->
+                <div class="text-center bg-white rounded-card shadow-card hover:shadow-card-hover transition-gentle p-6">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-headline text-lg font-semibold text-text-primary mb-2">Email</h3>
+                    <p class="text-text-secondary mb-3">Écrivez-nous</p>
+                    <p class="font-semibold text-primary-600 mb-1">info@fimibema.mg</p>
+                    <p class="text-sm text-text-secondary">Réponse sous 2h</p>
+                    <p class="text-sm text-text-secondary">en heures ouvrables</p>
+                </div>
+
+                <!-- WhatsApp Contact -->
+                <div class="text-center bg-white rounded-card shadow-card hover:shadow-card-hover transition-gentle p-6">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-headline text-lg font-semibold text-text-primary mb-2">WhatsApp</h3>
+                    <p class="text-text-secondary mb-3">Message instantané</p>
+                    <p class="font-semibold text-primary-600 mb-1">+261 34 17 196 77</p>
+                    <p class="text-sm text-text-secondary">Disponible 7j/7</p>
+                    <p class="text-sm text-text-secondary">9h-21h</p>
+                </div>
+
+                <!-- In-Person Visit -->
+                <div class="text-center bg-white rounded-card shadow-card hover:shadow-card-hover transition-gentle p-6">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-headline text-lg font-semibold text-text-primary mb-2">Visite</h3>
+                    <p class="text-text-secondary mb-3">Rendez-vous en personne</p>
+                    <p class="font-semibold text-primary-600 mb-1">Sur rendez-vous</p>
+                    <p class="text-sm text-text-secondary">Consultation gratuite</p>
+                    <p class="text-sm text-text-secondary">Évaluation personnalisée</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Map Section -->
+    <section class="py-16 bg-gray-50" id="contact-form-section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-white rounded-card shadow-card p-8">
+                    <h3 class="font-headline text-2xl font-bold text-text-primary mb-6">
+                        Envoyez-nous un Message
+                    </h3>
+                    
+                    <form id="contact-form" class="space-y-6">
+                        <!-- Service Type Selection -->
+                        <div>
+                            <label for="service-type" class="block text-sm font-semibold text-text-primary mb-2">
+                                Type de Service *
+                            </label>
+                            <select id="service-type" name="service-type" required class="w-full px-4 py-3 border border-border rounded-button focus:ring-2 focus:ring-primary-600 focus:border-primary-600 transition-gentle">
+                                <option value>Sélectionnez un service</option>
+                                <option value="residential">Hébergement Résidentiel</option>
+                                <option value="home-care">Soins à Domicile</option>
+                                <option value="training">Formation Professionnelle</option>
+                                <option value="consultation">Consultation Générale</option>
+                                <option value="emergency">Situation d'Urgence</option>
+                            </select>
+                        </div>
+
+                        <!-- Personal Information -->
+                        
+
+                <!-- Location & Map -->
+                <div class="space-y-8">
+                    <!-- Location Information -->
+                    <div class="bg-white rounded-card shadow-card p-8">
+                        <h3 class="font-headline text-2xl font-bold text-text-primary mb-6">
+                            Notre Localisation
+                        </h3>
+                        
+                        <div class="space-y-6">
+                            <!-- Address -->
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-text-primary mb-1">Adresse Principale</h4>
+                                    <p class="text-text-secondary">
+                                        Lot D 221 Ambodivondava Alasora<br />
+                                        101 Antananarivo<br />
+                                        Madagascar
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Office Hours -->
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-text-primary mb-1">Heures d'Ouverture</h4>
+                                    <div class="text-text-secondary space-y-1">
+                                        <p>Lundi - Vendredi: 8h00 - 16h30</p>
+                                        <p>Samedi: 8h00 - 16h30</p>
+                                        <p>Dimanche: Ouvert</p>
+                                        <p class="text-primary-600 font-semibold">Urgences: 24h/24, 7j/7</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Transportation -->
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-text-primary mb-1">Accès Transport</h4>
+                                    <div class="text-text-secondary space-y-1">
+                                        <p>🚌 Ligne de bus F, arrêt Ambodivondava</p>
+                                        <p>🚗 Parking gratuit disponible</p>
+                                        <p>🚶‍♂️ Accessible aux personnes à mobilité réduite</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Directions Button -->
+                        <div class="mt-6">
+                            <a href="https://maps.google.com/?q=Ambohidahy+Antananarivo+Madagascar" target="_blank" class="inline-flex items-center bg-primary-600 text-white px-6 py-3 rounded-button font-semibold hover:bg-primary-700 transition-gentle">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
+                                </svg>
+                                Obtenir l'Itinéraire
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Map Placeholder -->
+                    <div class="bg-white rounded-card shadow-card overflow-hidden">
+                        <div class="h-64 bg-gray-200 relative">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="text-center">
+                                    <svg class="w-16 h-16 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    </svg>
+                                    <p class="text-gray-600 font-semibold">Carte Interactive</p>
+                                    <p class="text-sm text-gray-500">Ambodivondava, Antananarivo</p>
+                                </div>
+                            </div>
+                            <!-- Map overlay with location pin -->
+                            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                <div class="w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center animate-pulse">
+                                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Team Contact -->
+    <section class="py-16 bg-white" id="team-contact">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-headline text-3xl lg:text-4xl font-bold text-text-primary mb-4">
+                    Contactez Nos Spécialistes
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Accès direct à notre équipe d'experts pour des conseils personnalisés selon vos besoins spécifiques.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Director Contact -->
+                <div class="bg-white rounded-card shadow-card hover:shadow-card-hover transition-gentle p-6 text-center">
+                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Dr. Marie Rasoamanana" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/5327580/pexels-photo-5327580.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                    </div>
+                    <h3 class="font-headline text-lg font-semibold text-text-primary mb-1">Dr. Marie Rasoamanana</h3>
+                    <p class="text-sm text-text-secondary mb-3">Directrice Médicale</p>
+                    <div class="space-y-2 text-sm">
+                        <p class="text-primary-600 font-semibold"></p>
+                        <p class="text-text-secondary">marie.r@fimibema.mg</p>
+                        <p class="text-xs text-text-secondary">Spécialiste en gériatrie</p>
+                    </div>
+                </div>
+
+                <!-- Training Coordinator -->
+                <div class="bg-white rounded-card shadow-card hover:shadow-card-hover transition-gentle p-6 text-center">
+                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Jean Rakoto" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg'; this.onerror=null;" />
+                    </div>
+                    <h3 class="font-headline text-lg font-semibold text-text-primary mb-1">Jean Rakoto</h3>
+                    <p class="text-sm text-text-secondary mb-3">Coordinateur Formation</p>
+                    <div class="space-y-2 text-sm">
+                        <p class="text-primary-600 font-semibold"></p>
+                        <p class="text-text-secondary">jean.r@fimibema.mg</p>
+                        <p class="text-xs text-text-secondary">Programmes AVS/AVE</p>
+                    </div>
+                </div>
+
+                <!-- Home Care Manager -->
+                <div class="bg-white rounded-card shadow-card hover:shadow-card-hover transition-gentle p-6 text-center">
+                    <div class="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1594824388853-e0c6b8e0e6b5?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Hery Andriamana" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/5327921/pexels-photo-5327921.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                    </div>
+                    <h3 class="font-headline text-lg font-semibold text-text-primary mb-1">Hery Andriamana</h3>
+                    <p class="text-sm text-text-secondary mb-3">Responsable Soins Domicile</p>
+                    <div class="space-y-2 text-sm">
+                        <p class="text-primary-600 font-semibold"></p>
+                        <p class="text-text-secondary">hery.a@fimibema.mg</p>
+                        <p class="text-xs text-text-secondary">Services personnalisés</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-50" id="faq-section">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-headline text-3xl lg:text-4xl font-bold text-text-primary mb-4">
+                    Questions Fréquentes
+                </h2>
+                <p class="text-xl text-text-secondary">
+                    Trouvez rapidement les réponses aux questions les plus courantes sur nos services.
+                </p>
+            </div>
+
+            <div class="space-y-6">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white rounded-card shadow-card">
+                    <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-gentle" data-target="faq-1">
+                        <span class="font-semibold text-text-primary">Quels sont vos tarifs pour l'hébergement résidentiel ?</span>
+                        <svg class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div id="faq-1" class="faq-content hidden px-6 pb-4">
+                        <p class="text-text-secondary">
+                            Nos tarifs varient selon le niveau de soins requis et le type de logement. Nous proposons des consultations gratuites pour évaluer vos besoins et vous fournir un devis personnalisé. Contactez-nous pour une estimation détaillée.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-white rounded-card shadow-card">
+                    <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-gentle" data-target="faq-2">
+                        <span class="font-semibold text-text-primary">Combien de temps durent vos formations professionnelles ?</span>
+                        <svg class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div id="faq-2" class="faq-content hidden px-6 pb-4">
+                        <p class="text-text-secondary">
+                            La durée varie selon le programme : Formation AVS (6 mois), Formation AVE (4 mois), Aide-soignant (12 mois), Premiers secours (2 jours). Toutes nos formations incluent des stages pratiques et sont certifiées par le Ministère de la Santé.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-white rounded-card shadow-card">
+                    <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-gentle" data-target="faq-3">
+                        <span class="font-semibold text-text-primary">Proposez-vous des services d'urgence 24h/24 ?</span>
+                        <svg class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div id="faq-3" class="faq-content hidden px-6 pb-4">
+                        <p class="text-text-secondary">
+                            Oui, nous avons une ligne d'urgence disponible 24h/24 et 7j/7 au +261 34 17 196 77. Notre équipe médicale peut intervenir rapidement pour toute situation d'urgence concernant nos résidents ou clients des services à domicile.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-white rounded-card shadow-card">
+                    <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-gentle" data-target="faq-4">
+                        <span class="font-semibold text-text-primary">Comment puis-je visiter vos installations ?</span>
+                        <svg class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div id="faq-4" class="faq-content hidden px-6 pb-4">
+                        <p class="text-text-secondary">
+                            Les visites se font sur rendez-vous du lundi au vendredi de 8h à 16h30 et le samedi de 8h à 16h30. Contactez-nous pour planifier une visite guidée gratuite de nos installations. Nous proposons également des consultations à domicile si nécessaire.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="bg-white rounded-card shadow-card">
+                    <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-gentle" data-target="faq-5">
+                        <span class="font-semibold text-text-primary">Acceptez-vous les assurances maladie ?</span>
+                        <svg class="w-5 h-5 text-text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div id="faq-5" class="faq-content hidden px-6 pb-4">
+                        <p class="text-text-secondary">
+                            Nous travaillons avec plusieurs compagnies d'assurance et pouvons vous aider dans les démarches de remboursement. Certains de nos services sont également couverts par les programmes sociaux gouvernementaux. Contactez-nous pour vérifier votre couverture.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white" id="footer">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <svg class="h-8 w-auto mr-3" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="10" y="15" width="30" height="30" rx="15" fill="#239148"/>
+                            <rect x="20" y="25" width="10" height="10" rx="2" fill="white"/>
+                            <text x="50" y="25" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="white">FI.MI.BEA.MA</text>
+                            <text x="50" y="40" font-family="Source Sans Pro, sans-serif" font-size="12" fill="#9CA3AF">Care</text>
+                        </svg>
+                    </div>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Plateforme complète de services de soins aux personnes âgées combinant hébergement résidentiel, formation professionnelle et services à domicile avec une mission caritative.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-gentle">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-gentle">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-gentle">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Liens Rapides</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-300 hover:text-white transition-gentle">À Propos</a></li>
+                        <li><a href="residential_care.html" class="text-gray-300 hover:text-white transition-gentle">Hébergement</a></li>
+                        <li><a href="home_care_services.html" class="text-gray-300 hover:text-white transition-gentle">Soins à Domicile</a></li>
+                        <li><a href="resources.html" class="text-gray-300 hover:text-white transition-gentle">Ressources</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white transition-gentle">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Contact</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            +261 34 12 345 67
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            info@fimibema.mg
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-4 h-4 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            Antananarivo, Madagascar
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 FI.MI.BEA.MA Care. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Contact form handling
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show success message
+            const submitButton = this.querySelector('button[type="submit"]');
+            const originalText = submitButton.innerHTML;
+            
+            submitButton.innerHTML = `
+                <span class="flex items-center justify-center">
+                    <svg class="w-5 h-5 mr-2 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                    </svg>
+                    Envoi en cours...
+                </span>
+            `;
+            submitButton.disabled = true;
+            
+            // Simulate form submission
+            setTimeout(() => {
+                submitButton.innerHTML = `
+                    <span class="flex items-center justify-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        Message Envoyé !
+                    </span>
+                `;
+                submitButton.classList.remove('bg-primary-600', 'hover:bg-primary-700');
+                submitButton.classList.add('bg-success', 'hover:bg-success');
+                
+                // Reset form after 3 seconds
+                setTimeout(() => {
+                    this.reset();
+                    submitButton.innerHTML = originalText;
+                    submitButton.disabled = false;
+                    submitButton.classList.remove('bg-success', 'hover:bg-success');
+                    submitButton.classList.add('bg-primary-600', 'hover:bg-primary-700');
+                    
+                    // Hide callback time section if it was shown
+                    document.getElementById('callback-time').classList.add('hidden');
+                }, 3000);
+            }, 2000);
+            
+            // Save form data to localStorage
+            const formData = new FormData(this);
+            const formObject = {};
+            formData.forEach((value, key) => {
+                formObject[key] = value;
+            });
+            localStorage.setItem('contactFormData', JSON.stringify(formObject));
+        });
+
+        // Callback request toggle
+        document.getElementById('callback-request').addEventListener('change', function() {
+            const callbackTime = document.getElementById('callback-time');
+            if (this.checked) {
+                callbackTime.classList.remove('hidden');
+            } else {
+                callbackTime.classList.add('hidden');
+            }
+        });
+
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', function() {
+                const targetId = this.getAttribute('data-target');
+                const content = document.getElementById(targetId);
+                const icon = this.querySelector('svg');
+                
+                // Close all other FAQ items
+                document.querySelectorAll('.faq-content').forEach(item => {
+                    if (item.id !== targetId && !item.classList.contains('hidden')) {
+                        item.classList.add('hidden');
+                        const otherIcon = document.querySelector(`[data-target="${item.id}"] svg`);
+                        otherIcon.classList.remove('rotate-180');
+                    }
+                });
+                
+                // Toggle current item
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // Load saved form data from localStorage
+        window.addEventListener('load', function() {
+            const savedData = localStorage.getItem('contactFormData');
+            if (savedData) {
+                const formData = JSON.parse(savedData);
+                Object.keys(formData).forEach(key => {
+                    const field = document.querySelector(`[name="${key}"]`);
+                    if (field) {
+                        if (field.type === 'radio' || field.type === 'checkbox') {
+                            if (field.value === formData[key] || formData[key] === 'on') {
+                                field.checked = true;
+                                // Trigger callback time display if callback request was checked
+                                if (key === 'callback-request' && field.checked) {
+                                    document.getElementById('callback-time').classList.remove('hidden');
+                                }
+                            }
+                        } else {
+                            field.value = formData[key];
+                        }
+                    }
+                });
+            }
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('main-navigation');
+            if (window.scrollY > 100) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form validation enhancements
+        document.querySelectorAll('input[required], select[required], textarea[required]').forEach(field => {
+            field.addEventListener('blur', function() {
+                if (!this.value.trim()) {
+                    this.classList.add('border-error');
+                    this.classList.remove('border-border');
+                } else {
+                    this.classList.remove('border-error');
+                    this.classList.add('border-border');
+                }
+            });
+            
+            field.addEventListener('input', function() {
+                if (this.value.trim()) {
+                    this.classList.remove('border-error');
+                    this.classList.add('border-border');
+                }
+            });
+        });
+
+        // Email validation
+        document.getElementById('email').addEventListener('blur', function() {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (this.value && !emailRegex.test(this.value)) {
+                this.classList.add('border-error');
+                this.classList.remove('border-border');
+            }
+        });
+
+        // Phone validation
+        document.getElementById('phone').addEventListener('blur', function() {
+            const phoneRegex = /^(\+261|0)[0-9]{9}$/;
+            if (this.value && !phoneRegex.test(this.value.replace(/\s/g, ''))) {
+                this.classList.add('border-error');
+                this.classList.remove('border-border');
+            }
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
